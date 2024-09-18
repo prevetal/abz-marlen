@@ -240,14 +240,12 @@ input[type=number]
 ::selection
 {
     color: #fff;
-
     background: #e31e24;
 }
 
 ::-moz-selection
 {
     color: #fff;
-
     background: #e31e24;
 }
 
@@ -299,13 +297,14 @@ html.custom_scroll
 
 body
 {
-    color: var(--text_color);
     font: var(--font_size) var(--font_family);
 
     height: 100%;
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height:         fill-available;
+
+    color: var(--text_color);
 }
 
 body.menu_open
@@ -316,7 +315,6 @@ body.menu_open
 
 button
 {
-    color: inherit;
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
@@ -327,6 +325,7 @@ button
     cursor: pointer;
     vertical-align: top;
 
+    color: inherit;
     border: none;
     background: none;
 }
@@ -351,9 +350,8 @@ button
 .main
 {
     display: flex;
-    flex-direction: column;
-
     flex: 1 0 auto;
+    flex-direction: column;
 }
 
 
@@ -384,11 +382,10 @@ button
 .row
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
@@ -402,9 +399,9 @@ button
 .content_flex.row,
 .content_flex > .cont.row
 {
-    justify-content: space-between;
-    align-items: stretch;
     align-content: stretch;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 
@@ -470,8 +467,6 @@ button
 
 .fancybox__content > .carousel__button.is-close
 {
-    color: #bdbdbd;
-
     top: 10px;
     right: 10px;
 
@@ -479,6 +474,8 @@ button
     height: 25px;
 
     transition: color .2s linear;
+
+    color: #bdbdbd;
 }
 
 .fancybox__content > .carousel__button.is-close svg
@@ -513,7 +510,6 @@ button
 
 .all_link a
 {
-    color: currentColor;
     font-size: 13px;
     font-weight: 600;
     line-height: 143.622%;
@@ -528,6 +524,7 @@ button
     letter-spacing: .39px;
     text-transform: uppercase;
 
+    color: currentColor;
     border: 1px solid;
 }
 
@@ -545,7 +542,6 @@ button
 .all_link a:hover
 {
     color: #fff;
-
     border-color: #e31e24;
 }
 
@@ -562,11 +558,10 @@ button
 .pagination
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
@@ -578,7 +573,6 @@ button
 
 .pagination a
 {
-    color: #8c8c8c;
     font-weight: 500;
     line-height: 54px;
 
@@ -592,6 +586,7 @@ button
     vertical-align: top;
     text-decoration: none;
 
+    color: #8c8c8c;
     border: 1px solid #e5e5e5;
 }
 
@@ -599,36 +594,34 @@ button
 .pagination a.active
 {
     color: #fff;
-
     background: #bdbdbd;
 }
 
 
 .pagination .sep
 {
-    color: #8c8c8c;
     font-weight: 500;
     line-height: 50px;
 
     width: 50px;
 
     text-align: center;
+
+    color: #8c8c8c;
 }
 
 
 .pagination a.prev,
 .pagination a.next
 {
-    color: #fff;
-
     display: flex;
-
-    background: #bdbdbd;
-
-    justify-content: center;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+
+    color: #fff;
+    background: #bdbdbd;
 }
 
 .pagination a.prev
@@ -677,52 +670,50 @@ button
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 47px;
     padding: 12px 72px 13px 26px;
 
     cursor: pointer;
     transition: background .2s linear;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
 .accordion_item .head .title
 {
-    color: #1f2023;
     font-size: 17px;
     font-weight: 700;
     line-height: 120.622%;
 
     transition: color .2s linear;
+
+    color: #1f2023;
 }
 
 
 .accordion_item .head .icon
 {
-    color: #fff;
-
     position: absolute;
     top: 1px;
     right: 1px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 45px;
     height: 45px;
 
     transition: .2s linear;
 
+    color: #fff;
     background: #b2b2b2;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .accordion_item .head .icon svg
@@ -766,7 +757,6 @@ button
 .accordion_item.active .head .icon
 {
     color: #fff;
-
     background: #e31e24;
 }
 
@@ -849,9 +839,9 @@ header .cont
 {
     position: relative;
 
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header .cont + .cont
@@ -863,13 +853,13 @@ header .cont + .cont
 
 header .logo
 {
-    color: currentColor;
-
     display: block;
 
     margin-right: auto;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 header .logo img
@@ -887,135 +877,134 @@ header .contacts
 
 header .contacts .phone
 {
-    color: #333;
     font-weight: 500;
     line-height: 143.622%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     text-align: right;
     letter-spacing: .32px;
 
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #333;
 }
 
 
 header .contacts .phone a
 {
-    color: currentColor;
-
     white-space: nowrap;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
 header .contacts .phone .whatsapp
 {
-    color: #828282;
-
     display: block;
 
     width: 23px;
     height: 23px;
     margin-left: 12px;
+
+    color: #828282;
 }
 
 
 header .contacts .callback_btn
 {
-    color: #e31e24;
     font-size: 14px;
     line-height: 143.622%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 10px;
 
     transition: color .2s linear;
     letter-spacing: .42px;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #e31e24;
 }
 
 
 header .contacts .callback_btn .icon
 {
-    color: #e31e24;
-
     display: block;
 
     width: 23px;
     height: 20px;
     margin-right: 12px;
+
+    color: #e31e24;
 }
 
 
 header .contacts .callback_btn:hover
 {
-    color: #000;
-
     text-decoration: underline;
+
+    color: #000;
 }
 
 
 header .contacts .email
 {
-    color: #e31e24;
     font-size: 14px;
     line-height: 143.622%;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     margin-top: 10px;
 
     letter-spacing: .42px;
 
-    justify-content: flex-end;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    color: #e31e24;
 }
 
 
 header .contacts .email a
 {
-    color: currentColor;
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     transition: color .2s linear;
     text-decoration: none;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 
 header .contacts .email .icon
 {
-    color: #e31e24;
-
     display: block;
 
     width: 20px;
     height: 16px;
     margin-right: 12px;
+
+    color: #e31e24;
 }
 
 
 header .contacts .email a:hover
 {
-    color: #000;
-
     text-decoration: underline;
+
+    color: #000;
 }
 
 
@@ -1038,34 +1027,34 @@ header .menu_item + .menu_item
 
 header .menu_item > a
 {
-    color: currentColor;
     font-weight: 500;
     line-height: 143.622%;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     transition: color .2s linear;
     text-decoration: none;
     letter-spacing: .8px;
 
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 
 header .menu_item > a .icon
 {
-    color: #e31e24;
-
     display: block;
 
     width: 19px;
     height: 16px;
     margin-right: 26px;
+
+    color: #e31e24;
 }
 
 
@@ -1177,7 +1166,6 @@ header .sub_menu > * + *
 
 header .sub_menu a
 {
-    color: currentColor;
     font-weight: 500;
     line-height: 120.622%;
 
@@ -1186,6 +1174,8 @@ header .sub_menu a
     transition: color .2s linear;
     white-space: nowrap;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 header .sub_menu a:hover,
@@ -1245,13 +1235,14 @@ header .sub_menu .columns .items > * + *
 
 header .sub_menu .columns .items a
 {
-    color: #000;
     font-size: 15px;
     font-weight: 400;
     line-height: 130%;
 
     white-space: normal;
     letter-spacing: .75px;
+
+    color: #000;
 }
 
 header .sub_menu .columns .items a:hover
@@ -1287,9 +1278,8 @@ header .search form :-moz-placeholder
 
 header .search form ::-moz-placeholder
 {
-    color: #4f4f4f;
-
     opacity: 1;
+    color: #4f4f4f;
 }
 
 header .search form :-ms-input-placeholder
@@ -1300,7 +1290,6 @@ header .search form :-ms-input-placeholder
 
 header .search .input
 {
-    color: var(--text_color);
     font-family: var(--font_family);
     font-size: var(--font_size);
 
@@ -1310,6 +1299,7 @@ header .search .input
     height: 32px;
     padding: 0 40px 0 0;
 
+    color: var(--text_color);
     border: none;
     border-bottom: 1px solid #bdbdbd;
     background: none;
@@ -1318,21 +1308,20 @@ header .search .input
 
 header .search .submit_btn
 {
-    color: #e31e24;
-
     position: absolute;
     top: 0;
     right: 0;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 23px;
     height: 22px;
 
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #e31e24;
 }
 
 
@@ -1445,22 +1434,22 @@ header.fixed .search
 
 .mob_header .cont
 {
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 
 .mob_header .logo
 {
-    color: currentColor;
-
     display: block;
 
     margin-right: auto;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .mob_header .logo img
@@ -1478,67 +1467,65 @@ header.fixed .search
 
 .mob_header .contacts .phone
 {
-    color: #333;
     font-weight: 500;
     line-height: 143.622%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     text-align: right;
     letter-spacing: .32px;
 
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #333;
 }
 
 
 .mob_header .contacts .phone a
 {
-    color: currentColor;
-
     white-space: nowrap;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
 .mob_header .contacts .phone .whatsapp
 {
-    color: #828282;
-
     display: block;
 
     width: 20px;
     height: 20px;
     margin-left: 8px;
+
+    color: #828282;
 }
 
 
 .mob_header .contacts .callback_btn
 {
-    color: #e31e24;
     font-size: 13px;
     line-height: 143.622%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 4px;
 
     transition: color .2s linear;
     letter-spacing: .42px;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #e31e24;
 }
 
 
 .mob_header .contacts .callback_btn .icon
 {
-    color: #e31e24;
-
     position: relative;
     top: -1px;
 
@@ -1547,78 +1534,81 @@ header.fixed .search
     width: 20px;
     height: 17px;
     margin-right: 8px;
+
+    color: #e31e24;
 }
 
 
 .mob_header .contacts .callback_btn:hover
 {
-    color: #000;
-
     text-decoration: underline;
+
+    color: #000;
 }
 
 
 .mob_header .contacts .email
 {
-    color: #e31e24;
     font-size: 14px;
     line-height: 143.622%;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     margin-top: 4px;
 
     letter-spacing: .42px;
 
-    justify-content: flex-end;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    color: #e31e24;
 }
 
 
 .mob_header .contacts .email a
 {
-    color: currentColor;
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     transition: color .2s linear;
     text-decoration: none;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 
 .mob_header .contacts .email .icon
 {
-    color: #e31e24;
-
     display: block;
 
     width: 18px;
     height: 15px;
     margin-right: 8px;
+
+    color: #e31e24;
 }
 
 
 .mob_header .contacts .email a:hover
 {
-    color: #000;
-
     text-decoration: underline;
+
+    color: #000;
 }
 
 
 
 .mob_header .mob_menu_btn
 {
-    color: currentColor;
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 44px;
     height: 34px;
@@ -1626,10 +1616,7 @@ header.fixed .search
     margin-left: 24px;
     padding: 8px;
 
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 
@@ -1695,7 +1682,6 @@ aside .block
 
 aside .block .title
 {
-    color: #1f2023;
     font-size: 22px;
     font-weight: 600;
     line-height: 120.622%;
@@ -1706,6 +1692,8 @@ aside .block .title
 
     letter-spacing: .44px;
     text-transform: uppercase;
+
+    color: #1f2023;
 }
 
 aside .block .title:before
@@ -1728,11 +1716,12 @@ aside .block .title:before
 
 aside .block .spoler_btn
 {
-    color: #e31e24;
     font-size: 14px;
     line-height: 120.622%;
 
     margin-top: 26px;
+
+    color: #e31e24;
 }
 
 
@@ -1768,7 +1757,6 @@ aside .links .items > *
 
 aside .links .items a
 {
-    color: #1f2023;
     font-weight: 500;
     line-height: 120.622%;
 
@@ -1780,6 +1768,8 @@ aside .links .items a
 
     transition: .2s linear;
     text-decoration: none;
+
+    color: #1f2023;
 }
 
 aside .links .items a:before
@@ -1836,7 +1826,6 @@ aside .links .items a.active:before
 
 aside .mob_filter_btn
 {
-    color: #fff;
     font-size: 13px;
     font-weight: 600;
     line-height: 143.622%;
@@ -1850,6 +1839,7 @@ aside .mob_filter_btn
     letter-spacing: .39px;
     text-transform: uppercase;
 
+    color: #fff;
     border: 1px solid #e31e24;
 }
 
@@ -1896,23 +1886,23 @@ aside .filter .field + .field
 
 aside .filter .checkbox
 {
-    color: #1f2023;
     font-weight: 500;
     line-height: 120.622%;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 19px;
     padding-left: 31px;
 
     cursor: pointer;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #1f2023;
 }
 
 
@@ -1976,19 +1966,17 @@ aside .filter .checkbox input:checked ~ .check:before
 aside .filter .submit
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     padding: 29px 26px 0;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
 aside .filter .submit_btn
 {
-    color: #fff;
     font-size: 13px;
     font-weight: 600;
     line-height: 143.622%;
@@ -2003,6 +1991,7 @@ aside .filter .submit_btn
     letter-spacing: .39px;
     text-transform: uppercase;
 
+    color: #fff;
     border: 1px solid #828282;
 }
 
@@ -2027,7 +2016,6 @@ aside .filter .submit_btn:hover span
 
 aside .filter .reset_btn
 {
-    color: #4f4f4f;
     font-size: 14px;
     line-height: 120.622%;
 
@@ -2037,6 +2025,7 @@ aside .filter .reset_btn
 
     transition: .2s linear;
 
+    color: #4f4f4f;
     border-bottom: 1px dashed;
 }
 
@@ -2083,25 +2072,26 @@ aside .filter .reset_btn:hover
 
 .breadcrumbs
 {
-    color: #e31e24;
     font-size: 14px;
     line-height: 150%;
+
+    color: #e31e24;
 }
 
 
 .breadcrumbs a
 {
-    color: #333;
-
     transition: color .2s linear;
     text-decoration: none;
+
+    color: #333;
 }
 
 .breadcrumbs a:hover
 {
-    color: #e31e24;
-
     text-decoration: underline;
+
+    color: #e31e24;
 }
 
 
@@ -2234,9 +2224,8 @@ aside .filter .reset_btn:hover
 
 .form ::-moz-placeholder
 {
-    color: var(--form_placeholder_color);
-
     opacity: 1;
+    color: var(--form_placeholder_color);
 }
 
 .form :-ms-input-placeholder
@@ -2248,14 +2237,14 @@ aside .filter .reset_btn:hover
 .form .columns
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-left: calc(var(--form_columns_offset) * -1);
 
     --form_columns_offset: 26px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .form .columns > *
@@ -2268,13 +2257,12 @@ aside .filter .reset_btn:hover
 .form .cols
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     margin-left: -45px;
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .form .cols .col
@@ -2298,7 +2286,6 @@ aside .filter .reset_btn:hover
 
 .form .input
 {
-    color: var(--text_color);
     font-family: var(--font_family);
     font-size: var(--font_size);
 
@@ -2310,6 +2297,7 @@ aside .filter .reset_btn:hover
 
     transition: border-color .2s linear;
 
+    color: var(--text_color);
     border: 1px solid var(--form_border_color);
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
@@ -2323,7 +2311,6 @@ aside .filter .reset_btn:hover
 
 .form textarea
 {
-    color: var(--text_color);
     font-family: var(--font_family);
     font-size: var(--font_size);
 
@@ -2336,6 +2323,7 @@ aside .filter .reset_btn:hover
     resize: none;
     transition: border-color .2s linear;
 
+    color: var(--text_color);
     border: 1px solid var(--form_border_color);
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
@@ -2369,11 +2357,14 @@ aside .filter .reset_btn:hover
 
 .form .file label
 {
-    color: #333;
     font-size: 14px;
     line-height: 130.122%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     height: 53px;
     padding: 0 12px;
@@ -2381,25 +2372,21 @@ aside .filter .reset_btn:hover
     cursor: pointer;
     letter-spacing: .28px;
 
+    color: #333;
     border: 1px dashed #828282;
     border-radius: 2px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
 .form .file label .icon
 {
-    color: #828282;
-
     display: block;
 
     width: 21px;
     height: 25px;
     margin-right: 10px;
+
+    color: #828282;
 }
 
 
@@ -2417,23 +2404,23 @@ aside .filter .reset_btn:hover
 
 .form .checkbox
 {
-    color: #333;
     font-size: 12px;
     line-height: 130.122%;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 24px;
     padding-left: 46px;
 
     cursor: pointer;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #333;
 }
 
 
@@ -2450,6 +2437,10 @@ aside .filter .reset_btn:hover
     left: 0;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 24px;
     height: 24px;
@@ -2457,11 +2448,6 @@ aside .filter .reset_btn:hover
     border: 1px solid var(--form_border_color);
     border-radius: 2px;
     background: var(--form_bg_color);
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .form .checkbox .check svg
@@ -2492,11 +2478,10 @@ aside .filter .reset_btn:hover
 .form .submit
 {
     display: flex;
-
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -2509,7 +2494,6 @@ aside .filter .reset_btn:hover
 
 .form .submit_btn
 {
-    color: #fff;
     font-size: 13px;
     font-weight: 600;
     line-height: 143.622%;
@@ -2524,6 +2508,7 @@ aside .filter .reset_btn:hover
     letter-spacing: .39px;
     text-transform: uppercase;
 
+    color: #fff;
     border: 1px solid #e31e24;
 }
 
@@ -2552,9 +2537,10 @@ aside .filter .reset_btn:hover
 ----------------*/
 .text_block
 {
-    color: #333;
     font-size: calc(var(--font_size) + 1px);
     line-height: 150%;
+
+    color: #333;
 }
 
 
@@ -2583,7 +2569,6 @@ aside .filter .reset_btn:hover
 
 .text_block h1
 {
-    color: var(--text_color);
     font-size: 40px;
     font-weight: 700;
     line-height: 120.622%;
@@ -2596,6 +2581,8 @@ aside .filter .reset_btn:hover
     padding-top: 12px;
 
     letter-spacing: 1.2px;
+
+    color: var(--text_color);
 }
 
 .text_block h1:before
@@ -2617,7 +2604,6 @@ aside .filter .reset_btn:hover
 
 .text_block h2
 {
-    color: var(--text_color);
     font-size: 36px;
     font-weight: 700;
     line-height: 120.622%;
@@ -2630,6 +2616,8 @@ aside .filter .reset_btn:hover
     padding-top: 12px;
 
     letter-spacing: 1.08px;
+
+    color: var(--text_color);
 }
 
 .text_block h2:before
@@ -2651,7 +2639,6 @@ aside .filter .reset_btn:hover
 
 .text_block h3
 {
-    color: var(--text_color);
     font-size: 30px;
     font-weight: 700;
     line-height: 120.622%;
@@ -2664,6 +2651,8 @@ aside .filter .reset_btn:hover
     padding-top: 12px;
 
     letter-spacing: .9px;
+
+    color: var(--text_color);
 }
 
 .text_block h3:before
@@ -2778,7 +2767,6 @@ aside .filter .reset_btn:hover
 
 .text_block figcaption
 {
-    color: #828282;
     font-size: 15px;
     font-style: italic;
     line-height: 150%;
@@ -2786,6 +2774,7 @@ aside .filter .reset_btn:hover
     margin-top: 10px;
     padding-bottom: 19px;
 
+    color: #828282;
     border-bottom: 1px solid #828282;
 }
 
@@ -2793,11 +2782,10 @@ aside .filter .reset_btn:hover
 .text_block .img_block
 {
     display: flex;
-
-    justify-content: space-between;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -2810,9 +2798,9 @@ aside .filter .reset_btn:hover
 
 .text_block .img_block .info
 {
-    width: 50%;
-
     align-self: center;
+
+    width: 50%;
 }
 
 
@@ -2835,7 +2823,6 @@ aside .filter .reset_btn:hover
 
 .text_block table th
 {
-    color: #fff;
     font-size: var(--font_size);
     font-weight: 700;
     line-height: 120.622%;
@@ -2845,6 +2832,7 @@ aside .filter .reset_btn:hover
     text-align: left;
     vertical-align: middle;
 
+    color: #fff;
     background: #e31e24;
 }
 
@@ -2868,7 +2856,6 @@ aside .filter .reset_btn:hover
 
 .text_block table td
 {
-    color: #1f2023;
     font-size: var(--font_size);
     line-height: 120.622%;
 
@@ -2877,6 +2864,7 @@ aside .filter .reset_btn:hover
     text-align: left;
     vertical-align: middle;
 
+    color: #1f2023;
     background: #eee;
 }
 
@@ -2904,11 +2892,10 @@ aside .filter .reset_btn:hover
 .text_block .cols_with_img
 {
     display: flex;
-
-    justify-content: space-between;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .text_block .cols_with_img .col
@@ -3101,15 +3088,14 @@ aside .filter .reset_btn:hover
     z-index: 3;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 600px;
     padding-top: 117px;
     padding-bottom: 127px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -3144,7 +3130,6 @@ aside .filter .reset_btn:hover
 
 .main_slider .link
 {
-    color: #fff;
     font-size: 13px;
     font-weight: 600;
     line-height: 143.622%;
@@ -3160,6 +3145,7 @@ aside .filter .reset_btn:hover
     letter-spacing: .39px;
     text-transform: uppercase;
 
+    color: #fff;
     border: 1px solid #e31e24;
 }
 
@@ -3190,15 +3176,14 @@ aside .filter .reset_btn:hover
     left: 50%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 
     margin-left: -620px;
 
     white-space: nowrap;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
 }
 
 .main_slider .controls > * + *
@@ -3210,10 +3195,11 @@ aside .filter .reset_btn:hover
 .main_slider .controls .current,
 .main_slider .controls .total
 {
-    color: #1f2023;
     font-size: 18px;
     font-weight: 500;
     line-height: 143.622%;
+
+    color: #1f2023;
 }
 
 
@@ -3248,7 +3234,6 @@ aside .filter .reset_btn:hover
 
 .about_info .data .title
 {
-    color: #1f2023;
     font-size: 34px;
     font-weight: 500;
     line-height: 120.622%;
@@ -3256,6 +3241,8 @@ aside .filter .reset_btn:hover
     position: relative;
 
     margin-bottom: 72px;
+
+    color: #1f2023;
 }
 
 .about_info .data .title:before
@@ -3278,11 +3265,12 @@ aside .filter .reset_btn:hover
 
 .about_info .desc
 {
-    color: #333;
     font-size: 18px;
     line-height: 150%;
 
     padding-left: 68px;
+
+    color: #333;
 }
 
 
@@ -3336,7 +3324,6 @@ aside .filter .reset_btn:hover
 
 .about_info .link a
 {
-    color: currentColor;
     font-size: 13px;
     font-weight: 600;
     line-height: 143.622%;
@@ -3351,6 +3338,7 @@ aside .filter .reset_btn:hover
     letter-spacing: .39px;
     text-transform: uppercase;
 
+    color: currentColor;
     border: 1px solid;
 }
 
@@ -3368,7 +3356,6 @@ aside .filter .reset_btn:hover
 .about_info .link a:hover
 {
     color: #fff;
-
     border-color: #e31e24;
 }
 
@@ -3448,11 +3435,11 @@ aside .filter .reset_btn:hover
 
 .services .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -23px;
     margin-left: -23px;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .services .row > *
@@ -3481,13 +3468,14 @@ aside .filter .reset_btn:hover
 
 .services .service .name
 {
-    color: #000;
     font-size: 20px;
     font-weight: 500;
     line-height: 120.622%;
 
     position: relative;
     z-index: 2;
+
+    color: #000;
 }
 
 .services .service .name:before
@@ -3509,7 +3497,6 @@ aside .filter .reset_btn:hover
 
 .services .service .desc
 {
-    color: #333;
     font-size: 15px;
     line-height: 140%;
 
@@ -3517,6 +3504,8 @@ aside .filter .reset_btn:hover
     z-index: 2;
 
     margin-top: 30px;
+
+    color: #333;
 }
 
 .services .service.big .desc
@@ -3534,13 +3523,12 @@ aside .filter .reset_btn:hover
     bottom: 0;
 
     display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     pointer-events: none;
-
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-content: flex-end;
-    flex-wrap: wrap;
 }
 
 .services .service .thumb img
@@ -3554,7 +3542,6 @@ aside .filter .reset_btn:hover
 
 .services .get_consult_btn
 {
-    color: #fff;
     font-size: 20px;
     font-weight: 500;
     line-height: 120.622%;
@@ -3562,18 +3549,18 @@ aside .filter .reset_btn:hover
     position: relative;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     padding: 32px;
 
     transition: background .2s linear;
     text-align: left;
 
+    color: #fff;
     background: #e31e24;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
@@ -3651,14 +3638,13 @@ aside .filter .reset_btn:hover
     position: relative;
 
     display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     height: 129px;
     margin-bottom: 35px;
-
-    justify-content: flex-start;
-    align-items: flex-end;
-    align-content: flex-end;
-    flex-wrap: wrap;
 }
 
 .advantages .icon:before
@@ -3681,7 +3667,6 @@ aside .filter .reset_btn:hover
 
 .advantages .icon:after
 {
-    color: #cbcbcb;
     font-size: 107px;
     font-weight: 300;
     line-height: 120.622%;
@@ -3696,6 +3681,8 @@ aside .filter .reset_btn:hover
     letter-spacing: -6.42px;
     text-transform: uppercase;
     pointer-events: none;
+
+    color: #cbcbcb;
 }
 
 
@@ -3733,11 +3720,12 @@ aside .filter .reset_btn:hover
 
 .advantages .desc
 {
-    color: #333;
     font-weight: 500;
     line-height: 140%;
 
     letter-spacing: .16px;
+
+    color: #333;
 }
 
 
@@ -3761,11 +3749,11 @@ aside .filter .reset_btn:hover
 
 .categories .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -20px;
     margin-left: -20px;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .categories .row > *
@@ -3778,8 +3766,6 @@ aside .filter .reset_btn:hover
 
 .categories .category
 {
-    color: currentColor;
-
     position: relative;
 
     display: block;
@@ -3790,6 +3776,7 @@ aside .filter .reset_btn:hover
     transition: color .2s linear;
     text-decoration: none;
 
+    color: currentColor;
     background: #fcfcfc;
 }
 
@@ -3846,7 +3833,6 @@ aside .filter .reset_btn:hover
 
 .categories .category .name
 {
-    color: #1f2023;
     font-size: 18px;
     font-weight: 600;
     line-height: 120.622%;
@@ -3855,6 +3841,8 @@ aside .filter .reset_btn:hover
     z-index: 5;
 
     transition: color .2s linear;
+
+    color: #1f2023;
 }
 
 
@@ -3938,26 +3926,24 @@ aside .filter .reset_btn:hover
 
 .categories .category .arr
 {
-    color: #fff;
-
     position: absolute;
     z-index: 3;
     right: 4px;
     bottom: 5px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 46px;
     height: 46px;
 
     transition: background .2s linear;
 
+    color: #fff;
     background: #9f9f9f;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .categories .category .arr .icon
@@ -4038,8 +4024,6 @@ aside .filter .reset_btn:hover
 .projects .swiper-button-next,
 .projects .swiper-button-prev
 {
-    color: #fff;
-
     position: absolute;
     top: auto;
     bottom: 100%;
@@ -4050,6 +4034,7 @@ aside .filter .reset_btn:hover
 
     transition: background .2s linear;
 
+    color: #fff;
     background: #bdbdbd;
 }
 
@@ -4090,13 +4075,12 @@ aside .filter .reset_btn:hover
 .projects .project
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     background: #f1f1f1;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -4161,26 +4145,28 @@ aside .filter .reset_btn:hover
 
 .projects .project .name
 {
-    color: #1f2023;
     font-weight: 600;
     line-height: 148%;
+
+    color: #1f2023;
 }
 
 
 .projects .project .desc
 {
-    color: #333;
     font-size: 15px;
     line-height: 145%;
 
     display: -webkit-box;
     overflow: hidden;
+    -webkit-box-orient: vertical;
 
     height: 226px;
     margin-top: 32px;
 
+    color: #333;
+
     -webkit-line-clamp: 10;
-    -webkit-box-orient: vertical;
 }
 
 
@@ -4192,7 +4178,6 @@ aside .filter .reset_btn:hover
 
 .projects .project .link a
 {
-    color: currentColor;
     font-size: 13px;
     font-weight: 600;
     line-height: 143.622%;
@@ -4208,6 +4193,7 @@ aside .filter .reset_btn:hover
     letter-spacing: .39px;
     text-transform: uppercase;
 
+    color: currentColor;
     border: 1px solid;
 }
 
@@ -4224,7 +4210,6 @@ aside .filter .reset_btn:hover
 .projects .project .link a:hover
 {
     color: #fff;
-
     border-color: #e31e24;
 }
 
@@ -4291,8 +4276,6 @@ aside .filter .reset_btn:hover
 .partners .swiper-button-next,
 .partners .swiper-button-prev
 {
-    color: #fff;
-
     position: absolute;
     top: 0;
     bottom: 0;
@@ -4303,6 +4286,7 @@ aside .filter .reset_btn:hover
 
     transition: background .2s linear;
 
+    color: #fff;
     background: #bdbdbd;
 }
 
@@ -4342,13 +4326,12 @@ aside .filter .reset_btn:hover
 .partners .item
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     height: 79px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .partners .item img
@@ -4463,6 +4446,10 @@ aside .filter .reset_btn:hover
     font-size: 14px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     padding: 7px 9px 7px 15px;
 
@@ -4473,30 +4460,24 @@ aside .filter .reset_btn:hover
     border: 1px solid #e5e5e5;
     border-radius: 4px;
     background: #fdfdfd;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
 .filter_selected .btn .icon
 {
-    color: #828282;
-
     display: block;
 
     width: 10px;
     height: 10px;
     margin-left: 12px;
+
+    color: #828282;
 }
 
 
 .filter_selected .btn:hover
 {
     color: #fff;
-
     border-color: #000;
     background: #000;
 }
@@ -4509,26 +4490,24 @@ aside .filter .reset_btn:hover
 .products_head
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-bottom: 32px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
 .products_head .sort
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-left: auto;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -4566,7 +4545,6 @@ aside .filter .reset_btn:hover
 
 .products_head .nice-select .current
 {
-    color: #8c8c8c;
     line-height: 33px;
 
     display: block;
@@ -4581,6 +4559,7 @@ aside .filter .reset_btn:hover
     letter-spacing: .48px;
     text-overflow: ellipsis;
 
+    color: #8c8c8c;
     border: 1px solid #e5e5e5;
 }
 
@@ -4616,8 +4595,6 @@ aside .filter .reset_btn:hover
 
 .products_head .nice-select .list .option
 {
-    color: #8c8c8c;
-
     display: block;
 
     padding: 6px 14px;
@@ -4628,6 +4605,8 @@ aside .filter .reset_btn:hover
     transition: color .2s linear;
     white-space: nowrap;
     letter-spacing: .48px;
+
+    color: #8c8c8c;
 }
 
 .products_head .nice-select .list .option:empty
@@ -4645,8 +4624,6 @@ aside .filter .reset_btn:hover
 
 .products_head .nice-select + .arr
 {
-    color: #b1b1b1;
-
     position: absolute;
     top: 0;
     right: 23px;
@@ -4660,6 +4637,8 @@ aside .filter .reset_btn:hover
 
     transition: transform .2s linear;
     pointer-events: none;
+
+    color: #b1b1b1;
 }
 
 .products_head .nice-select.open + .arr
@@ -4722,8 +4701,6 @@ aside .filter .reset_btn:hover
 .products .swiper-button-next,
 .products .swiper-button-prev
 {
-    color: #fff;
-
     position: absolute;
     top: auto;
     bottom: 100%;
@@ -4734,6 +4711,7 @@ aside .filter .reset_btn:hover
 
     transition: background .2s linear;
 
+    color: #fff;
     background: #bdbdbd;
 }
 
@@ -4773,11 +4751,11 @@ aside .filter .reset_btn:hover
 
 .products .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -32px;
     margin-left: -32px;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .products .row > *
@@ -4803,7 +4781,6 @@ aside .filter .reset_btn:hover
 
 .products .product .sticker
 {
-    color: #fff;
     font-size: 12px;
     font-weight: 500;
 
@@ -4815,6 +4792,8 @@ aside .filter .reset_btn:hover
 
     letter-spacing: .36px;
     text-transform: uppercase;
+
+    color: #fff;
 }
 
 .products .product .sticker.new
@@ -4836,17 +4815,16 @@ aside .filter .reset_btn:hover
 .products .product .thumb
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: calc(100% + 38px);
     height: 297px;
     margin-right: -19px;
     margin-bottom: 25px;
     margin-left: -19px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .products .product .thumb img
@@ -4860,50 +4838,51 @@ aside .filter .reset_btn:hover
 
 .products .product .name
 {
-    color: #1f2023;
     font-size: 17px;
     font-weight: 600;
     line-height: 145%;
 
     letter-spacing: .51px;
+
+    color: #1f2023;
 }
 
 
 .products .product .name a
 {
-    color: currentColor;
-
     display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .products .product .name a:hover
 {
-    color: #e31e24;
-
     text-decoration: underline;
+
+    color: #e31e24;
 }
 
 
 .products .product .articul
 {
-    color: #4f4f4f;
     font-size: 15px;
     line-height: 120.622%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 39px;
 
     letter-spacing: .45px;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #4f4f4f;
 }
 
 
@@ -4912,15 +4891,14 @@ aside .filter .reset_btn:hover
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 16px;
     height: 16px;
     margin-left: 8px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .products .product .copy_btn .icon
@@ -4942,7 +4920,6 @@ aside .filter .reset_btn:hover
 
 .products .product .link a
 {
-    color: currentColor;
     font-size: 13px;
     font-weight: 600;
     line-height: 143.622%;
@@ -4957,6 +4934,7 @@ aside .filter .reset_btn:hover
     letter-spacing: .39px;
     text-transform: uppercase;
 
+    color: currentColor;
     border: 1px solid;
 }
 
@@ -4974,7 +4952,6 @@ aside .filter .reset_btn:hover
 .products .product .link a:hover
 {
     color: #fff;
-
     border-color: #4f4f4f;
 }
 
@@ -4998,24 +4975,22 @@ aside .filter .reset_btn:hover
 .products_bottom
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     margin-top: 50px;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
 .products_bottom .limit
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
@@ -5051,7 +5026,6 @@ aside .filter .reset_btn:hover
 
 .products_bottom .nice-select .current
 {
-    color: #8c8c8c;
     line-height: 54px;
 
     display: block;
@@ -5066,6 +5040,7 @@ aside .filter .reset_btn:hover
     letter-spacing: .48px;
     text-overflow: ellipsis;
 
+    color: #8c8c8c;
     border: 1px solid #e5e5e5;
 }
 
@@ -5101,8 +5076,6 @@ aside .filter .reset_btn:hover
 
 .products_bottom .nice-select .list .option
 {
-    color: #8c8c8c;
-
     display: block;
 
     padding: 6px 16px;
@@ -5113,6 +5086,8 @@ aside .filter .reset_btn:hover
     transition: color .2s linear;
     white-space: nowrap;
     letter-spacing: .48px;
+
+    color: #8c8c8c;
 }
 
 .products_bottom .nice-select .list .option:empty
@@ -5130,8 +5105,6 @@ aside .filter .reset_btn:hover
 
 .products_bottom .nice-select + .arr
 {
-    color: #b1b1b1;
-
     position: absolute;
     top: 0;
     right: 15px;
@@ -5145,6 +5118,8 @@ aside .filter .reset_btn:hover
 
     transition: transform .2s linear;
     pointer-events: none;
+
+    color: #b1b1b1;
 }
 
 .products_bottom .nice-select.open + .arr
@@ -5194,17 +5169,16 @@ aside .filter .reset_btn:hover
 
     display: flex;
     overflow: hidden;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 100%;
     height: 528px;
     padding: 19px;
 
     text-decoration: none;
-
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .product_info .images .big .item img
@@ -5217,8 +5191,6 @@ aside .filter .reset_btn:hover
 
 .product_info .images .big .item .zoom
 {
-    color: #c4c4c4;
-
     position: absolute;
     z-index: 3;
     right: 22px;
@@ -5228,6 +5200,8 @@ aside .filter .reset_btn:hover
 
     width: 23px;
     height: 22px;
+
+    color: #c4c4c4;
 }
 
 
@@ -5276,23 +5250,22 @@ aside .filter .reset_btn:hover
 .product_info .images .swiper-button-next,
 .product_info .images .swiper-button-prev
 {
-    color: #828282;
-
     position: absolute;
     right: auto;
     left: 0;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 100%;
     height: 34px;
 
     transition: .2s linear;
 
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+    color: #828282;
 }
 
 .product_info .images .swiper-button-prev
@@ -5331,7 +5304,6 @@ aside .filter .reset_btn:hover
 .product_info .images .swiper-button-prev:hover
 {
     color: #fff;
-
     background: #bdbdbd;
 }
 
@@ -5340,6 +5312,10 @@ aside .filter .reset_btn:hover
 {
     display: flex;
     overflow: hidden;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 100%;
     height: 100%;
@@ -5348,11 +5324,6 @@ aside .filter .reset_btn:hover
     transition: border-color .2s linear;
 
     border: 1px solid #e5e5e5;
-
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .product_info .images .thumbs .btn img
@@ -5413,19 +5384,18 @@ aside .filter .reset_btn:hover
 
 .product_info .features > *
 {
-    color: #1f2023;
     line-height: 120.622%;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     padding: 8px 16px;
 
+    color: #1f2023;
     background: #eee;
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .product_info .features > *:nth-child(2n)
@@ -5453,14 +5423,13 @@ aside .filter .reset_btn:hover
 .product_info .buy
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 50px;
     margin-left: -43px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .product_info .buy > *
@@ -5471,18 +5440,18 @@ aside .filter .reset_btn:hover
 
 .product_info .buy .price
 {
-    color: #1f2023;
     font-size: 21px;
     font-weight: 500;
     line-height: 120.622%;
 
     white-space: nowrap;
+
+    color: #1f2023;
 }
 
 
 .product_info .buy .order_btn
 {
-    color: #fff;
     font-size: 13px;
     font-weight: 600;
     line-height: 143.622%;
@@ -5497,6 +5466,7 @@ aside .filter .reset_btn:hover
     letter-spacing: .39px;
     text-transform: uppercase;
 
+    color: #fff;
     border: 1px solid #e31e24;
 }
 
@@ -5577,8 +5547,6 @@ aside .filter .reset_btn:hover
 .media_gallery .swiper-button-next,
 .media_gallery .swiper-button-prev
 {
-    color: #fff;
-
     position: absolute;
     top: auto;
     bottom: 100%;
@@ -5589,6 +5557,7 @@ aside .filter .reset_btn:hover
 
     transition: background .2s linear;
 
+    color: #fff;
     background: #bdbdbd;
 }
 
@@ -5628,11 +5597,11 @@ aside .filter .reset_btn:hover
 
 .media_gallery .item
 {
-    color: currentColor;
-
     display: block;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .media_gallery .item img
@@ -5682,22 +5651,21 @@ aside .filter .reset_btn:hover
     line-height: 150%;
 
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .contacts_info .location .icon
 {
-    color: #e31e24;
-
     display: block;
 
     width: 19px;
     height: 27px;
     margin-right: 16px;
+
+    color: #e31e24;
 }
 
 
@@ -5715,7 +5683,6 @@ aside .filter .reset_btn:hover
 
 .contacts_info .days_off
 {
-    color: #e31e24;
     font-size: 17px;
     line-height: 143.622%;
 
@@ -5723,19 +5690,20 @@ aside .filter .reset_btn:hover
     padding-left: 35px;
 
     letter-spacing: .34px;
+
+    color: #e31e24;
 }
 
 
 .contacts_info .phone
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 51px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .contacts_info .phone + .phone
@@ -5746,55 +5714,55 @@ aside .filter .reset_btn:hover
 
 .contacts_info .phone a
 {
-    color: currentColor;
     font-size: 19px;
     font-weight: 600;
     line-height: 143.622%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     text-decoration: none;
     letter-spacing: .32px;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 
 .contacts_info .phone .icon
 {
-    color: #e31e24;
-
     display: block;
 
     width: 15px;
     height: 23px;
     margin-right: 19px;
+
+    color: #e31e24;
 }
 
 .contacts_info .phone .icon2
 {
-    color: #e31e24;
-
     display: block;
 
     width: 24px;
     height: 24px;
     margin-right: 10px;
+
+    color: #e31e24;
 }
 
 
 .contacts_info .whatsapp
 {
-    color: #219653;
-
     display: block;
 
     width: 33px;
     height: 33px;
     margin-left: 11px;
+
+    color: #219653;
 }
 
 
@@ -5804,86 +5772,84 @@ aside .filter .reset_btn:hover
     line-height: 143.622%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 51px;
 
     transition: color .2s linear;
     text-align: left;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
 .contacts_info .callback_btn .icon
 {
-    color: #e31e24;
-
     display: block;
 
     width: 24px;
     height: 31px;
     margin-right: 10px;
+
+    color: #e31e24;
 }
 
 
 .contacts_info .callback_btn:hover
 {
-    color: #f74d52;
-
     text-decoration: underline;
+
+    color: #f74d52;
 }
 
 
 .contacts_info .email
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 11px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
 .contacts_info .email a
 {
-    color: currentColor;
     font-size: 17px;
     line-height: 143.622%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     transition: color .2s linear;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 
 .contacts_info .email .icon
 {
-    color: #e31e24;
-
     display: block;
 
     width: 20px;
     height: 16px;
     margin-right: 14px;
+
+    color: #e31e24;
 }
 
 
 .contacts_info .email a:hover
 {
-    color: #f74d52;
-
     text-decoration: underline;
+
+    color: #f74d52;
 }
 
 
@@ -5907,7 +5873,6 @@ aside .filter .reset_btn:hover
 footer
 {
     color: #fff;
-
     background: #2e3135;
 }
 
@@ -5948,64 +5913,63 @@ footer .contacts > * + *
 footer .contacts .phone
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
 footer .contacts .phone a
 {
-    color: currentColor;
     font-weight: 600;
     line-height: 143.622%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     text-decoration: none;
     letter-spacing: .32px;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 
 footer .contacts .phone .icon
 {
-    color: #e31e24;
-
     display: block;
 
     width: 15px;
     height: 23px;
     margin-right: 19px;
+
+    color: #e31e24;
 }
 
 footer .contacts .phone .icon2
 {
-    color: #e31e24;
-
     display: block;
 
     width: 24px;
     height: 24px;
     margin-right: 10px;
+
+    color: #e31e24;
 }
 
 
 footer .contacts .whatsapp
 {
-    color: #219653;
-
     display: block;
 
     width: 33px;
     height: 33px;
     margin-left: 21px;
+
+    color: #219653;
 }
 
 
@@ -6015,89 +5979,86 @@ footer .contacts .callback_btn
     line-height: 143.622%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     transition: color .2s linear;
     text-align: left;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
 footer .contacts .callback_btn .icon
 {
-    color: #e31e24;
-
     display: block;
 
     width: 24px;
     height: 31px;
     margin-right: 10px;
+
+    color: #e31e24;
 }
 
 
 footer .contacts .callback_btn:hover
 {
-    color: #f74d52;
-
     text-decoration: underline;
+
+    color: #f74d52;
 }
 
 
 footer .contacts .email
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
 footer .contacts .email a
 {
-    color: currentColor;
     font-size: 14px;
     line-height: 143.622%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     transition: color .2s linear;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 
 footer .contacts .email .icon
 {
-    color: #e31e24;
-
     display: block;
 
     width: 20px;
     height: 16px;
     margin-right: 14px;
+
+    color: #e31e24;
 }
 
 
 footer .contacts .email a:hover
 {
-    color: #f74d52;
-
     text-decoration: underline;
+
+    color: #f74d52;
 }
 
 
 
 footer .links .title
 {
-    color: #fff;
     font-size: 18px;
     font-weight: 500;
     line-height: 130.122%;
@@ -6105,16 +6066,17 @@ footer .links .title
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-bottom: 28px;
     padding-bottom: 32px;
 
     pointer-events: none;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #fff;
 }
 
 footer .links .title:after
@@ -6159,7 +6121,6 @@ footer .links .items > * + *
 
 footer .links .items a
 {
-    color: currentColor;
     font-size: 15px;
     line-height: 130.122%;
 
@@ -6171,6 +6132,8 @@ footer .links .items a
     transition: background .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -6184,12 +6147,12 @@ footer .links .items a.active
 
 footer .bottom
 {
-    color: #bdbdbd;
     font-size: 13px;
     line-height: 130.122%;
 
     padding: 25px 0 24px;
 
+    color: #bdbdbd;
     background: #37383c;
 }
 
@@ -6202,9 +6165,9 @@ footer .bottom .cont > * + *
 
 footer .bottom a
 {
-    color: currentColor;
-
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -6214,8 +6177,6 @@ footer .bottom a
 -----------*/
 .modal
 {
-    color: var(--text_color);
-
     display: none;
     visibility: visible !important;
 
@@ -6223,6 +6184,7 @@ footer .bottom a
     max-width: 100%;
     padding: 42px;
 
+    color: var(--text_color);
     border: 1px solid #f2f2f2;
     background: #fff;
     box-shadow: 0 4px 41px -10px rgba(0, 0, 0, .10);

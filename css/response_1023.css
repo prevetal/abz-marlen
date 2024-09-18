@@ -90,6 +90,10 @@
     {
         display: flex;
         overflow: auto;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         height: 100%;
         min-height: -moz-available;
@@ -97,18 +101,14 @@
         min-height:         fill-available;
         padding: 20px 0;
 
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
         overscroll-behavior-y: contain;
     }
 
     header .scroll > *
     {
-        width: 100%;
-
         order: 2;
+
+        width: 100%;
     }
 
     header .scroll > * + *
@@ -152,10 +152,9 @@
     header .menu
     {
         display: block;
+        order: 2;
 
         width: 100%;
-
-        order: 2;
     }
 
 
@@ -542,9 +541,9 @@
     ----------------*/
     .about_info .data
     {
-        width: 100%;
-
         order: 2;
+
+        width: 100%;
     }
 
 
@@ -599,9 +598,9 @@
 
     .services .row > *.big
     {
-        width: calc(100% - 24px);
-
         order: 2;
+
+        width: calc(100% - 24px);
     }
 
 
@@ -961,14 +960,13 @@
     footer .contacts
     {
         display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         margin-top: 40px;
         margin-bottom: -16px;
-
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
     }
 
 
