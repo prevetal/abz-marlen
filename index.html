@@ -257,6 +257,32 @@
 							<img src="images/logo.svg" alt="">
 						</div>
 
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:84957275466">8 (495) 727 54 66</a>
+							</div>
+
+							<button class="callback_btn modal_btn" data-modal="callback_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_callback"></use></svg>
+								<span>Обратный звонок</span>
+							</button>
+						</div>
+
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:89054466444">8 (905) 446 64 44</a>
+
+								<svg class="whatsapp"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+							</div>
+
+							<div class="email">
+								<a href="mailto:abz.marlen@yahoo.com">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+									<span>abz.marlen@yahoo.com</span>
+								</a>
+							</div>
+						</div>
+
 						<button class="mob_menu_btn">
 							<span></span>
 						</button>
@@ -489,7 +515,7 @@
 								<div class="desc">Модернизация АБЗ с заменой отдельных элементов, переходом на новые схемы функционирования, обеспечивающие рост производительности, </div>
 							</div>
 
-							<button class="get_consult_btn">
+							<button class="get_consult_btn modal_btn" data-modal="callback_modal">
 								<span>Получить<br> консультацию</span>
 
 								<svg class="icon"><use xlink:href="images/sprite.svg#ic_consult"></use></svg>
@@ -583,7 +609,7 @@
 							</a>
 
 							<a href="/" class="category grey">
-								<div class="name">Датчики</div>
+								<div class="name">Тензодатчики</div>
 
 								<div class="thumb">
 									<img data-src="images/tmp/category_thumb3.png" alt="" class="lazyload">
@@ -682,7 +708,7 @@
 
 				<section class="projects">
 					<div class="cont">
-						<div class="block_head">
+						<div class="block_head pad_r">
 							<div class="title">Реализованные проекты</div>
 						</div>
 
@@ -856,7 +882,7 @@
 				</section>
 
 
-				<div class="order_form">
+				<section class="order_form">
 					<div class="cont">
 						<div class="data">
 							<div class="block_head">
@@ -921,7 +947,7 @@
 							<img data-src="images/order_form_img.png" alt="" class="img lazyload">
 						</div>
 					</div>
-				</div>
+				</section>
 			</div>
 
 
@@ -967,7 +993,10 @@
 						</div>
 
 						<div class="links">
-							<div class="title">Каталог</div>
+							<div class="title">
+								<span>Каталог</span>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+							</div>
 
 							<div class="items">
 								<div><a href="/">Запасные части для<br> асфальтобетонных заводов</a></div>
@@ -984,7 +1013,10 @@
 						</div>
 
 						<div class="links">
-							<div class="title">Услуги</div>
+							<div class="title">
+								<span>Услуги</span>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+							</div>
 
 							<div class="items">
 								<div><a href="/">Дефектовка и диагностика АБЗ</a></div>
@@ -998,7 +1030,10 @@
 						</div>
 
 						<div class="links">
-							<div class="title">О Компании</div>
+							<div class="title">
+								<span>О Компании</span>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+							</div>
 
 							<div class="items">
 								<div><a href="/">О нас</a></div>
@@ -1078,6 +1113,7 @@
 		<script src="js/imask.js"></script>
 		<script src="js/nice-select2.js"></script>
 		<script src="js/clipboard.min.js"></script>
+		<script src="js/sticky-kit.min.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>

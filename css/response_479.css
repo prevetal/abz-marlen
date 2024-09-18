@@ -3,6 +3,10 @@
     /*-------------------
         Global styles
     -------------------*/
+    :root
+    {
+        --font_size_title: 24px;
+    }
 
 
 
@@ -16,55 +20,471 @@
 
 
 
+    /*--------------
+        All link
+    --------------*/
+    .all_link
+    {
+        margin-top: 36px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 12px 60px 12px 16px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 15px;
+    }
+
+
+
     /*-----------------
         Mob. header
     -----------------*/
+    .mob_header .logo img
+    {
+        height: 20px;
+    }
 
 
-
-    /*-------------
-        Sidebar
-    -------------*/
+    .mob_header .contacts
+    {
+        display: none;
+    }
 
 
 
     /*---------------
         Page head
     ---------------*/
-
-
-
-    /*----------------
-        Block head
-    ----------------*/
+    .breadcrumbs
+    {
+        font-size: 12px;
+    }
 
 
 
     /*------------------
         Form elements
     ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
 
 
 
     /*----------------
         Typography
     ----------------*/
+    .text_block h1
+    {
+        font-size: 26px;
+    }
+
+    .text_block h2
+    {
+        font-size: 24px;
+    }
+
+    .text_block h3
+    {
+        font-size: 22px;
+    }
+
+
+    .text_block .message
+    {
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+    }
 
 
 
     /*-----------------
         Main slider
     -----------------*/
+    .main_slider .title
+    {
+        font-size: calc(var(--font_size_title) + 1px);
+    }
+
+
+    .swiper-horizontal > .swiper-pagination-progressbar,
+    .swiper-pagination-progressbar.swiper-pagination-horizontal,
+    .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+    .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite
+    {
+        width: 52px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .data .title
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .service.big .desc
+    {
+        width: 100%;
+    }
+
+
+    .services .service .thumb
+    {
+        display: none;
+    }
+
+
+
+    .services .get_consult_btn
+    {
+        font-size: 16px;
+    }
+
+
+    .services .get_consult_btn .icon
+    {
+        right: 76px;
+        bottom: 20px;
+
+        width: 52px;
+        height: 36px;
+    }
+
+    .services .get_consult_btn .arr
+    {
+        right: 24px;
+        bottom: 28px;
+
+        width: 32px;
+        height: 12px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        margin-bottom: -28px;
+        margin-left: 0;
+    }
+
+    .advantages .row > *
+    {
+        width: 100%;
+        margin-bottom: 28px;
+        margin-left: 0;
+    }
+
+
+    .advantages .icon
+    {
+        height: 64px;
+        margin-bottom: 16px;
+    }
+
+    .advantages .icon:after
+    {
+        font-size: 64px;
+        line-height: 100%;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .categories .category
+    {
+        min-height: 132px;
+    }
+
+
+    .categories .category .name
+    {
+        font-size: 15px;
+    }
+
+
+    .categories .category .thumb
+    {
+        transform: scale(.55);
+    }
+
+    .categories .category:nth-child(1) .thumb
+    {
+        right: -48px;
+        bottom: -68px;
+
+        min-width: 80px;
+        min-height: 80px;
+    }
+
+    .categories .category:nth-child(2) .thumb
+    {
+        right: 16px;
+        bottom: -56px;
+    }
+
+    .categories .category:nth-child(3) .thumb
+    {
+        right: 0;
+        bottom: -28px;
+    }
+
+    .categories .category:nth-child(4) .thumb
+    {
+        right: -4px;
+        bottom: -36px;
+    }
+
+    .categories .category:nth-child(5) .thumb
+    {
+        right: -8px;
+        bottom: -24px;
+    }
+
+    .categories .category:nth-child(6) .thumb
+    {
+        right: 0;
+        bottom: -52px;
+    }
+
+    .categories .category:nth-child(7) .thumb
+    {
+        right: -8px;
+        bottom: -68px;
+    }
+
+    .categories .category:nth-child(8) .thumb
+    {
+        right: 0;
+        bottom: -20px;
+    }
+
+    .categories .category:nth-child(9) .thumb
+    {
+        right: 0;
+        bottom: -12px;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .projects .swiper-slide
+    {
+        width: 300px;
+    }
+
+
+
+    /*--------------
+        Partners
+    --------------*/
+    .partners
+    {
+        padding: 60px 0;
+    }
+
+
+    .partners .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+
+
+    /*----------------
+        Order form
+    ----------------*/
+    .order_form .data
+    {
+        padding: 40px 24px;
+    }
+
+
+    .order_form .block_head .title
+    {
+        padding: 0;
+    }
+
+    .order_form .block_head .title:before
+    {
+        left: -48px;
+
+        width: 32px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row
+    {
+        margin-left: 0;
+    }
+
+    .products .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .products .product
+    {
+        padding: 23px;
+    }
+
+
+    .products .product .thumb
+    {
+        height: 220px;
+    }
+
+
+    .products .product .name
+    {
+        font-size: 15px;
+    }
+
+
+    .products .product .articul
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images
+    {
+        padding-left: 0;
+    }
+
+
+    .product_info .images .big .item
+    {
+        height: 380px;
+    }
+
+
+    .product_info .images .thumbs
+    {
+        display: none;
+    }
+
+
+    .product_info .images .swiper-horizontal > .swiper-pagination-bullets,
+    .product_info .images .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .product_info .images .swiper-pagination-custom,
+    .product_info .images .swiper-pagination-fraction
+    {
+        bottom: 16px;
+
+        display: flex;
+    }
+
+
+    .product_info .data
+    {
+        margin-top: 24px;
+    }
+
+
+    .product_info .features .label
+    {
+        width: 124px;
+    }
+
+    .product_info .features .val
+    {
+        width: calc(100% - 124px);
+    }
+
+
+
+    .product_info .description .title
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-------------------
+        Media gallery
+    -------------------*/
+    .media_gallery .item img
+    {
+        max-width: 280px;
+    }
 
 
 
     /*------------
         Footer
     ------------*/
+    footer .contacts > *
+    {
+        width: 100%;
+    }
 
 
 
     /*-----------
         PopUp
     -----------*/
+    .modal_title
+    {
+        font-size: 20px;
+    }
+
+    .modal_title:before
+    {
+        top: 10px;
+    }
+
+
+    .modal .form .agree
+    {
+        margin-top: 0;
+    }
 }

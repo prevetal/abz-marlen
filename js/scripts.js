@@ -59,6 +59,66 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 
+	// Карусель товаров
+	const productsSliders = [],
+		products = document.querySelectorAll('.products .swiper')
+
+	products.forEach(function (el, i) {
+		el.classList.add('products_s' + i)
+
+		let options = {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			preloadImages: false,
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
+			breakpoints: {
+				0: {
+					spaceBetween: 12,
+					slidesPerView: 'auto'
+				},
+				768: {
+					spaceBetween: 16,
+					slidesPerView: 3
+				},
+				1280: {
+					spaceBetween: 32,
+					slidesPerView: 4
+				}
+			},
+			on: {
+				init: swiper => setHeight(swiper.el.querySelectorAll('.product')),
+				resize: swiper => {
+					let products = swiper.el.querySelectorAll('.product')
+
+					products.forEach(el => el.style.height = 'auto')
+
+					setHeight(products)
+				}
+			}
+		}
+
+		productsSliders.push(new Swiper('.products_s' + i, options))
+	})
+
+
 	// Карусель проектов
 	const projectsSliders = [],
 		projects = document.querySelectorAll('.projects .swiper')
@@ -91,16 +151,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 			breakpoints: {
 				0: {
-					spaceBetween: 12,
+					spaceBetween: 24,
 					slidesPerView: 'auto'
 				},
-				480: {
-					spaceBetween: 20,
+				1024: {
+					spaceBetween: 24,
 					slidesPerView: 2
-				},
-				768: {
-					spaceBetween: 30,
-					slidesPerView: 3
 				},
 				1280: {
 					spaceBetween: 33,
@@ -168,6 +224,115 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
+	// Страница товара
+	if ($('.product_info .images').length) {
+		const productThumbs = new Swiper('.product_info .thumbs .swiper', {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			preloadImages: false,
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			direction: 'vertical',
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			breakpoints: {
+				0: {
+					spaceBetween: 12,
+					slidesPerView: 3
+				},
+				1024: {
+					spaceBetween: 16,
+					slidesPerView: 3
+				},
+				1280: {
+					spaceBetween: 22,
+					slidesPerView: 3
+				}
+			}
+		})
+
+		const productSlider = new Swiper('.product_info .big .swiper', {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 24,
+			slidesPerView: 1,
+			preloadImages: false,
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			thumbs: {
+				swiper: productThumbs
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			}
+		})
+	}
+
+
+	// Фото и видео галерея
+	const mediaGallerySliders = [],
+		mediaGallery = document.querySelectorAll('.media_gallery .swiper')
+
+	mediaGallery.forEach(function (el, i) {
+		el.classList.add('media_gallery_s' + i)
+
+		let options = {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			preloadImages: false,
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
+			slidesPerView: 'auto',
+			breakpoints: {
+				0: {
+					spaceBetween: 24
+				},
+				1280: {
+					spaceBetween: 50
+				}
+			}
+		}
+
+		mediaGallerySliders.push(new Swiper('.media_gallery_s' + i, options))
+	})
+
+
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
 	Fancybox.defaults.trapFocus = false
@@ -217,6 +382,24 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
+	// Аккордион
+	$('body').on('click', '.accordion .accordion_item .head', function(e) {
+		e.preventDefault()
+
+		const $item = $(this).closest('.accordion_item'),
+			$accordion = $(this).closest('.accordion')
+
+		if ($item.hasClass('active')) {
+			$item.removeClass('active').find('.data').slideUp(300)
+		} else {
+			$accordion.find('.accordion_item').removeClass('active')
+			$accordion.find('.data').slideUp(300)
+
+			$item.addClass('active').find('.data').slideDown(300)
+		}
+	})
+
+
 	// Моб. меню
 	$('.mob_header .mob_menu_btn').click((e) => {
 		e.preventDefault()
@@ -227,7 +410,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		$('.overlay').fadeIn(300)
 	})
 
-	$('header > .close, .overlay').click((e) => {
+	$('header .mob_close_btn, .overlay').click((e) => {
 		e.preventDefault()
 
 		$('.mob_header .mob_menu_btn').removeClass('active')
@@ -282,6 +465,14 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
+	// Боковая колонка - моб. фмльтр
+	$('aside .mob_filter_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').next().slideToggle(300)
+	})
+
+
 	// Боковая колонка - Сполйер ссылок
 	$('aside .links .spoler_btn').click(function(e) {
 		e.preventDefault()
@@ -289,7 +480,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let links = $(this).closest('.links')
 
 		$(this).toggleClass('active')
-		links.find('.hide').slideToggle(300)
+		links.find('.hide').slideToggle(300, () => $('.sticky').trigger('sticky_kit:recalc'))
 	})
 
 
@@ -300,7 +491,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let data = $(this).closest('.data')
 
 		$(this).toggleClass('active')
-		data.find('.hide').slideToggle(300)
+		data.find('.hide').slideToggle(300, () => $('.sticky').trigger('sticky_kit:recalc'))
 	})
 
 
@@ -332,6 +523,42 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		})
 	}
+
+
+	// Моб. подвал
+	$('footer .links .title').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').next().slideToggle(300)
+	})
+
+
+	// Залипание блока
+	$('.sticky').stick_in_parent()
+})
+
+
+
+window.addEventListener('load', function () {
+	// Фикс. шапка
+	headerInit   = true,
+	headerHeight = $('header').outerHeight()
+
+	$('header').wrap('<div class="header_wrap"></div>')
+	$('.header_wrap').height(headerHeight)
+
+	headerInit && $(window).scrollTop() > headerHeight
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
+})
+
+
+
+window.addEventListener('scroll', function () {
+	// Фикс. шапка
+	typeof headerInit !== 'undefined' && headerInit && $(window).scrollTop() > headerHeight
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
 })
 
 
@@ -344,6 +571,22 @@ window.addEventListener('resize', function () {
 	if (typeof WW !== 'undefined' && WW != windowW) {
 		// Перезапись ширины окна
 		WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
+
+
+		// Фикс. шапка
+		headerInit = false
+		$('.header_wrap').height('auto')
+
+		setTimeout(() => {
+			headerInit   = true
+			headerHeight = $('header').outerHeight()
+
+			$('.header_wrap').height(headerHeight)
+
+			headerInit && $(window).scrollTop() > headerHeight
+				? $('header').addClass('fixed')
+				: $('header').removeClass('fixed')
+		}, 100)
 
 
 		// Моб. версия
