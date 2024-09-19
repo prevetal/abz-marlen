@@ -104,7 +104,9 @@
     .text_block .message
     {
         width: calc(100% + 48px);
+        margin-top: 40px;
         margin-right: -24px;
+        margin-bottom: 40px;
         margin-left: -24px;
     }
 
@@ -208,6 +210,13 @@
     {
         font-size: 64px;
         line-height: 100%;
+    }
+
+
+    .advantages .image.big
+    {
+        width: 100%;
+        margin-left: 0;
     }
 
 
@@ -332,7 +341,8 @@
     /*----------------
         Order form
     ----------------*/
-    .order_form .data
+    .order_form .data,
+    .order_form .data.row
     {
         padding: 40px 24px;
     }
@@ -343,7 +353,8 @@
         padding: 0;
     }
 
-    .order_form .block_head .title:before
+    .order_form .block_head .title:before,
+    .order_form .data.row .block_head .title:before
     {
         left: -48px;
 
@@ -455,6 +466,45 @@
     .media_gallery .item img
     {
         max-width: 280px;
+    }
+
+
+
+    /*------------
+        Prices
+    ------------*/
+    .prices .service .title
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-----------
+        Certs
+    -----------*/
+    .certs .cert .desc
+    {
+        width: 100%;
+    }
+
+
+    .certs .cert .info
+    {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+
+
+    /*---------------------
+        Service process
+    ---------------------*/
+    .service_process .step:after
+    {
+        font-size: 64px;
+
+        right: 20px;
     }
 
 

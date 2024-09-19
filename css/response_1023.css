@@ -320,6 +320,16 @@
 
 
 
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        margin-top: 24px;
+    }
+
+
+
     /*------------------
         Form elements
     ------------------*/
@@ -421,6 +431,23 @@
     .text_block .img_block figure
     {
         width: calc(50% - 24px);
+    }
+
+
+    .text_block .img_block .info.big
+    {
+        order: 2;
+
+        width: 100%;
+        margin-top: 0;
+    }
+
+
+    .text_block .img_block figure.small
+    {
+        width: auto;
+        max-width: 100%;
+        margin-bottom: 24px;
     }
 
 
@@ -648,7 +675,7 @@
 
     .advantages .row > *
     {
-        width: calc(25% - 24px);
+        width: calc(33.333% - 24px);
         margin-bottom: 40px;
         margin-left: 24px;
     }
@@ -684,6 +711,24 @@
     .advantages .item:nth-child(4) .icon img
     {
         margin-left: 40px;
+    }
+
+    .advantages .item:nth-child(6) .icon img
+    {
+        margin-left: 36px;
+    }
+
+
+    .advantages .image.big
+    {
+        width: calc(100% - 24px);
+        padding-bottom: 0;
+    }
+
+
+    .advantages .bottom
+    {
+        margin-top: 40px;
     }
 
 
@@ -763,6 +808,33 @@
         left: -48px;
 
         width: 52px;
+    }
+
+
+    .order_form .data.row
+    {
+        padding: 40px 48px;
+    }
+
+
+    .order_form .data.row .block_head
+    {
+        width: 100%;
+    }
+
+
+    .order_form .data.row .block_head .title:before
+    {
+        left: -48px;
+
+        width: 52px;
+    }
+
+
+    .order_form .data.row .form
+    {
+        width: 100%;
+        margin-top: 24px;
     }
 
 
@@ -938,6 +1010,83 @@
     .contacts_info .email a
     {
         font-size: var(--font_size);
+    }
+
+
+
+    /*------------------
+        Sub services
+    ------------------*/
+    .sub_services .row
+    {
+        margin-left: 0;
+    }
+
+
+    .sub_services .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .sub_services .service .info
+    {
+        width: calc(100% - 224px);
+        padding: 24px;
+    }
+
+
+    .sub_services .service .thumb
+    {
+        width: 224px;
+        min-height: 248px;
+    }
+
+
+
+    /*------------
+        Prices
+    ------------*/
+    .prices .service .title
+    {
+        font-size: 24px;
+
+        margin-bottom: 28px;
+    }
+
+
+
+    /*-----------
+        Certs
+    -----------*/
+    .certs .row
+    {
+        margin-left: 0;
+    }
+
+
+    .certs .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*---------------------
+        Service process
+    ---------------------*/
+    .service_process .row
+    {
+        margin-left: 0;
+    }
+
+
+    .service_process .row > *
+    {
+        width: 100%;
+        margin-left: 0;
     }
 
 

@@ -306,6 +306,22 @@
     }
 
 
+    .block_head .sub_title
+    {
+        font-size: 18px;
+
+        margin-top: 20px;
+    }
+
+
+    .block_head .desc
+    {
+        font-size: 16px;
+
+        margin-top: 32px;
+    }
+
+
 
     /*------------------
         Form elements
@@ -387,6 +403,12 @@
     }
 
 
+    .text_block p.big
+    {
+        font-size: 18px;
+    }
+
+
     .text_block h1
     {
         font-size: 36px;
@@ -426,6 +448,18 @@
     .text_block .img_block figure
     {
         width: calc(50% - 28px);
+    }
+
+
+    .text_block .img_block .info.big
+    {
+        width: calc(100% - 424px);
+    }
+
+
+    .text_block .img_block figure.small
+    {
+        width: 400px;
     }
 
 
@@ -501,6 +535,12 @@
     .text_block .message > *
     {
         padding-left: 48px;
+    }
+
+
+    .text_block .message.big
+    {
+        font-size: 16px;
     }
 
 
@@ -778,14 +818,21 @@
     .advantages .row
     {
         margin-bottom: -48px;
-        margin-left: -48px;
+        margin-left: -40px;
     }
 
     .advantages .row > *
     {
-        width: calc(25% - 48px);
+        width: calc(25% - 40px);
         margin-bottom: 48px;
-        margin-left: 48px;
+        margin-left: 40px;
+    }
+
+
+    .advantages .image.big
+    {
+        width: calc(50% - 40px);
+        padding-bottom: 4px;
     }
 
 
@@ -824,6 +871,19 @@
     .advantages .item:nth-child(4) .icon img
     {
         margin-left: 44px;
+    }
+
+    .advantages .item:nth-child(6) .icon img
+    {
+        margin-left: 44px;
+    }
+
+
+    .advantages .bottom
+    {
+        font-size: 18px;
+
+        margin-top: 48px;
     }
 
 
@@ -1091,6 +1151,36 @@
     .order_form .block_head .title:before
     {
         left: -80px;
+    }
+
+
+    .order_form .data.row
+    {
+        padding: 40px 40px 40px 80px;
+    }
+
+
+    .order_form .data.row .block_head
+    {
+        width: calc(100% - 480px);
+    }
+
+
+    .order_form .data.row .block_head .title
+    {
+        font-size: calc(var(--font_size_title) - 4px);
+    }
+
+
+    .order_form .data.row .block_head .title:before
+    {
+        left: -80px;
+    }
+
+
+    .order_form .data.row .form
+    {
+        width: 440px;
     }
 
 
@@ -1500,6 +1590,217 @@
     {
         height: 440px;
         margin-top: 40px;
+    }
+
+
+
+    /*------------------
+        Sub services
+    ------------------*/
+    .sub_services
+    {
+        padding: 68px 0;
+    }
+
+
+    .sub_services .row
+    {
+        margin-left: -24px;
+    }
+
+
+    .sub_services .row > *
+    {
+        width: calc(50% - 24px);
+        margin-left: 24px;
+    }
+
+
+    .sub_services .service .info
+    {
+        width: calc(100% - 200px);
+        padding: 24px 20px 24px 24px;
+    }
+
+
+    .sub_services .service .name
+    {
+        font-size: 18px;
+    }
+
+
+    .sub_services .service .name:before
+    {
+        top: 0;
+        left: -24px;
+    }
+
+
+    .sub_services .service .desc
+    {
+        font-size: 14px;
+
+        margin-top: 20px;
+    }
+
+
+    .sub_services .service .thumb
+    {
+        width: 200px;
+        min-height: 280px;
+    }
+
+
+    .sub_services .bottom
+    {
+        font-size: 18px;
+
+        width: 100%;
+    }
+
+
+
+    /*------------
+        Prices
+    ------------*/
+    .prices .service .title
+    {
+        font-size: 26px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .prices .section + .section
+    {
+        margin-top: 32px;
+    }
+
+
+    .prices .section .name
+    {
+        font-size: 18px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .prices .items > *
+    {
+        font-size: 15px;
+
+        padding: 2px 20px;
+    }
+
+
+
+    .prices .text_block
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------
+        Certs
+    -----------*/
+    .certs
+    {
+        padding: 68px 0;
+    }
+
+
+    .certs .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .certs .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .certs .cert
+    {
+        padding: 19px;
+    }
+
+
+    .certs .cert .desc
+    {
+        width: calc(100% - 115px);
+    }
+
+
+    .certs .cert .info
+    {
+        gap: 16px;
+    }
+
+
+
+    /*--------------------
+        Reviews on map
+    --------------------*/
+    .reviews_on_map .map
+    {
+        height: 440px;
+    }
+
+
+
+    /*---------------------
+        Service process
+    ---------------------*/
+    .service_process .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .service_process .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .service_process .step
+    {
+        padding: 24px;
+    }
+
+
+    .service_process .step:after
+    {
+        font-size: 80px;
+    }
+
+
+    .service_process .step .name
+    {
+        font-size: 18px;
+    }
+
+
+    .service_process .step .name:before
+    {
+        left: -24px;
+
+        height: 52px;
+    }
+
+
+    .service_process .step .desc
+    {
+        margin-top: 20px;
     }
 
 

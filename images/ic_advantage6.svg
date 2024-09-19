@@ -1,0 +1,42 @@
+<svg width="93" height="91" viewBox="0 0 93 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1321315637">
+<path id="Vector 727" d="M1 1.5V89.5H92" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector 728" d="M6 63L20.4486 48.5625L37.0865 58.1875L59.4162 36.3125L71.5 42.5L85.5 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<g id="Rectangle 14054">
+<mask id="path-3-inside-1_7080_449" fill="white">
+<rect x="15" y="61" width="10" height="24" rx="1"/>
+</mask>
+<rect x="15" y="61" width="10" height="24" rx="1" stroke="black" stroke-width="4" mask="url(#path-3-inside-1_7080_449)"/>
+</g>
+<g id="Rectangle 14055">
+<mask id="path-4-inside-2_7080_449" fill="white">
+<rect x="33" y="66" width="10" height="19" rx="1"/>
+</mask>
+<rect x="33" y="66" width="10" height="19" rx="1" stroke="black" stroke-width="4" mask="url(#path-4-inside-2_7080_449)"/>
+</g>
+<g id="Rectangle 14056">
+<mask id="path-5-inside-3_7080_449" fill="white">
+<rect x="55" y="46" width="10" height="39" rx="1"/>
+</mask>
+<rect x="55" y="46" width="10" height="39" rx="1" stroke="#E31E24" stroke-width="4" mask="url(#path-5-inside-3_7080_449)"/>
+</g>
+<g id="Rectangle 14057">
+<mask id="path-6-inside-4_7080_449" fill="white">
+<rect x="80" y="27" width="10" height="58" rx="1"/>
+</mask>
+<rect x="80" y="27" width="10" height="58" rx="1" stroke="#E31E24" stroke-width="4" mask="url(#path-6-inside-4_7080_449)"/>
+</g>
+<g id="Group 1321315636">
+<path id="Line 965" d="M4 10C4.55228 10 5 9.55228 5 9C5 8.44772 4.55228 8 4 8V10ZM2 10H4V8H2V10Z" fill="black"/>
+<path id="Line 966" d="M4 24C4.55228 24 5 23.5523 5 23C5 22.4477 4.55228 22 4 22V24ZM2 24H4V22H2V24Z" fill="black"/>
+<path id="Line 967" d="M4 38C4.55228 38 5 37.5523 5 37C5 36.4477 4.55228 36 4 36V38ZM2 38H4V36H2V38Z" fill="black"/>
+<path id="Line 968" d="M4 52C4.55228 52 5 51.5523 5 51C5 50.4477 4.55228 50 4 50V52ZM2 52H4V50H2V52Z" fill="black"/>
+<path id="Line 969" d="M4 66C4.55228 66 5 65.5523 5 65C5 64.4477 4.55228 64 4 64V66ZM2 66H4V64H2V66Z" fill="black"/>
+<path id="Line 970" d="M4 80C4.55228 80 5 79.5523 5 79C5 78.4477 4.55228 78 4 78V80ZM2 80H4V78H2V80Z" fill="black"/>
+</g>
+<circle id="Ellipse 902" cx="20.5" cy="48.5" r="3.5" fill="white" stroke="black" stroke-width="2"/>
+<circle id="Ellipse 903" cx="37.5" cy="57.5" r="3.5" fill="white" stroke="black" stroke-width="2"/>
+<circle id="Ellipse 904" cx="60.5" cy="35.5" r="3.5" fill="white" stroke="black" stroke-width="2"/>
+<circle id="Ellipse 905" cx="85.5" cy="5.5" r="3.5" fill="#E31E24" stroke="black" stroke-width="2"/>
+</g>
+</svg>

@@ -150,12 +150,28 @@
 
     .block_head .title
     {
-        padding-left: 68px;
+        padding-left: 40px;
     }
 
     .block_head .title:before
     {
-        width: 52px;
+        left: -24px;
+
+        width: 48px;
+    }
+
+
+    .block_head .sub_title
+    {
+        font-size: 16px;
+    }
+
+
+    .block_head .desc
+    {
+        font-size: 14px;
+
+        margin-top: 20px;
     }
 
 
@@ -180,6 +196,12 @@
     /*----------------
         Typography
     ----------------*/
+    .text_block p.big
+    {
+        font-size: 18px;
+    }
+
+
     .text_block h1
     {
         font-size: 28px;
@@ -205,6 +227,8 @@
 
     .text_block .img_block .info
     {
+        order: 2;
+
         width: 100%;
         margin-top: 16px;
     }
@@ -218,6 +242,14 @@
     .text_block .cols_with_img .col
     {
         width: 100%;
+    }
+
+
+    .text_block .message.big
+    {
+        font-size: 15px;
+
+        padding: 20px;
     }
 
 
@@ -369,6 +401,14 @@
     {
         font-size: 72px;
         line-height: 100%;
+    }
+
+
+    .advantages .bottom
+    {
+        font-size: 16px;
+
+        margin-top: 24px;
     }
 
 
@@ -543,6 +583,21 @@
     }
 
     .order_form .block_head .title:before
+    {
+        left: -40px;
+
+        width: 44px;
+    }
+
+
+
+    .order_form .data.row
+    {
+        padding: 40px;
+    }
+
+
+    .order_form .data.row .block_head .title:before
     {
         left: -40px;
 
@@ -782,6 +837,108 @@
         font-size: 14px;
 
         margin-top: 28px;
+    }
+
+
+
+    /*------------------
+        Sub services
+    ------------------*/
+    .sub_services
+    {
+        padding: 60px 0;
+    }
+
+
+    .sub_services .service .info
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+
+    .sub_services .service .name
+    {
+        font-size: 16px;
+    }
+
+
+    .sub_services .service .thumb
+    {
+        width: 100%;
+        height: auto;
+        padding-bottom: 75%;
+    }
+
+
+    .sub_services .bottom
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*------------
+        Prices
+    ------------*/
+    .prices .service + .service
+    {
+        margin-top: 48px;
+    }
+
+
+    .prices .service .title
+    {
+        font-size: 22px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .prices .section .name
+    {
+        font-size: 16px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .prices .items > *
+    {
+        font-size: 14px;
+
+        padding: 2px 12px;
+    }
+
+
+
+    /*-----------
+        Certs
+    -----------*/
+    .certs
+    {
+        padding: 60px 0;
+    }
+
+
+
+    /*--------------------
+        Reviews on map
+    --------------------*/
+    .reviews_on_map .map
+    {
+        height: 360px;
+    }
+
+
+
+    /*---------------------
+        Service process
+    ---------------------*/
+    .service_process .step:after
+    {
+        font-size: 70px;
     }
 
 

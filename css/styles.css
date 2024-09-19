@@ -340,7 +340,6 @@ button
     overflow: clip;
     flex-direction: column;
 
-    min-width: 375px;
     min-height: 100%;
 
     background: var(--bg);
@@ -2130,6 +2129,14 @@ aside .filter .reset_btn:hover
     letter-spacing: 1.2px;
 }
 
+
+* + .page_title
+{
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+
 .page_title:before
 {
     position: absolute;
@@ -2194,6 +2201,27 @@ aside .filter .reset_btn:hover
     content: '';
 
     background: #e31e24;
+}
+
+
+.block_head .sub_title
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+
+    margin-top: 32px;
+}
+
+
+.block_head .desc
+{
+    font-size: 18px;
+    line-height: 150%;
+
+    margin-top: 47px;
+
+    color: #333;
 }
 
 
@@ -2548,7 +2576,7 @@ aside .filter .reset_btn:hover
 .text_block .img_block .info > *,
 .text_block .message > *
 {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 
@@ -2564,6 +2592,14 @@ aside .filter .reset_btn:hover
 .text_block .message > :first-child
 {
     margin-top: 0 !important;
+}
+
+
+.text_block p.big
+{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
 }
 
 
@@ -2786,6 +2822,9 @@ aside .filter .reset_btn:hover
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 
@@ -2796,11 +2835,24 @@ aside .filter .reset_btn:hover
 }
 
 
+.text_block .img_block figure.small
+{
+    width: 472px;
+    max-width: 100%;
+}
+
+
 .text_block .img_block .info
 {
     align-self: center;
 
     width: 50%;
+}
+
+
+.text_block .img_block .info.big
+{
+    width: calc(100% - 552px);
 }
 
 
@@ -2986,14 +3038,21 @@ aside .filter .reset_btn:hover
 {
     position: relative;
 
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     padding: 38px;
 
     border: 12px solid #f9f9f9;
     outline: 2px solid #fff;
     outline-offset: -12px;
     background: #eee;
+}
+
+.text_block .message.big
+{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
 }
 
 
@@ -3717,15 +3776,70 @@ aside .filter .reset_btn:hover
     margin-left: 54px;
 }
 
+.advantages .item:nth-child(5) .icon img
+{
+    margin-left: 32px;
+}
+
+.advantages .item:nth-child(6) .icon img
+{
+    margin-left: 50px;
+}
+
+.advantages .item:nth-child(7) .icon img
+{
+    margin-left: 44px;
+}
+
+
+.advantages .name
+{
+    font-weight: 700;
+    line-height: 140%;
+
+    margin-bottom: 19px;
+
+    letter-spacing: .16px;
+
+    color: #333;
+}
+
 
 .advantages .desc
 {
-    font-weight: 500;
     line-height: 140%;
 
     letter-spacing: .16px;
 
     color: #333;
+}
+
+
+.advantages .image.big
+{
+    align-self: flex-end;
+
+    width: calc(50% - 73px);
+    padding-bottom: 7px;
+}
+
+
+.advantages .image img
+{
+    display: block;
+
+    width: 100%;
+}
+
+
+
+.advantages .bottom
+{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+
+    margin-top: 80px;
 }
 
 
@@ -4412,6 +4526,52 @@ aside .filter .reset_btn:hover
     display: block;
 
     pointer-events: none;
+}
+
+
+.order_form .data.row
+{
+    justify-content: space-between;
+
+    padding: 50px 50px 50px 92px;
+}
+
+
+.order_form .data.row .block_head
+{
+    width: 510px;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+
+.order_form .data.row .block_head .title
+{
+    font-size: calc(var(--font_size_title) - 3px);
+    font-weight: 700;
+    line-height: 120.622%;
+
+    letter-spacing: 1.65px;
+    text-transform: uppercase;
+}
+
+
+.order_form .data.row .block_head .title:before
+{
+    left: -92px;
+}
+
+
+.order_form .data.row .form
+{
+    width: 504px;
+    max-width: 100%;
+}
+
+
+.order_form .data.row .form .submit_btn
+{
+    width: 100%;
 }
 
 
@@ -5863,6 +6023,480 @@ aside .filter .reset_btn:hover
     margin-top: 57px;
 
     background: #ddd;
+}
+
+
+
+/*------------------
+    Service info
+------------------*/
+.service_info
+{
+    padding-top: 10px;
+}
+
+
+.service_info .text_block h2
+{
+    padding: 0;
+}
+
+.service_info .text_block h2:before
+{
+    display: none;
+}
+
+
+
+/*------------------
+    Sub services
+------------------*/
+.sub_services
+{
+    padding: 80px 0;
+
+    background: #eee;
+}
+
+
+.sub_services .row
+{
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-bottom: -24px;
+    margin-left: -32px;
+}
+
+
+.sub_services .row > *
+{
+    width: calc(50% - 32px);
+    margin-bottom: 24px;
+    margin-left: 32px;
+}
+
+
+.sub_services .service
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    text-decoration: none;
+
+    color: currentColor;
+    background: #fff;
+}
+
+
+.sub_services .service .info
+{
+    width: calc(100% - 264px);
+    padding: 32px 22px 32px 32px;
+}
+
+
+.sub_services .service .name
+{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120.622%;
+
+    position: relative;
+}
+
+
+.sub_services .service .name:before
+{
+    position: absolute;
+    top: -16px;
+    left: -32px;
+
+    display: block;
+
+    width: 4px;
+    height: 55px;
+
+    content: '';
+    pointer-events: none;
+
+    background: #e31e24;
+}
+
+
+.sub_services .service .desc
+{
+    font-size: 15px;
+    line-height: 140%;
+
+    margin-top: 30px;
+
+    color: #333;
+}
+
+
+.sub_services .service .thumb
+{
+    position: relative;
+
+    width: 264px;
+    max-width: 100%;
+    min-height: 313px;
+
+    background: #ddd;
+}
+
+
+.sub_services .service .thumb img
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.sub_services .bottom
+{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+
+    width: 918px;
+    max-width: 100%;
+    margin-top: 32px;
+}
+
+
+
+/*------------
+    Prices
+------------*/
+.prices .service + .service
+{
+    margin-top: 60px;
+}
+
+
+.prices .service .title
+{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 120.622%;
+
+    margin-bottom: 39px;
+
+    letter-spacing: .9px;
+}
+
+
+.prices .section + .section
+{
+    margin-top: 40px;
+}
+
+
+.prices .section .name
+{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+
+    margin-bottom: 11px;
+
+    letter-spacing: .6px;
+}
+
+
+.prices .items > *
+{
+    font-size: 18px;
+    line-height: 191%;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    padding: 2px 24px;
+
+    background: #eee;
+}
+
+
+.prices .items > *:nth-child(2n)
+{
+    background: #fafafa;
+}
+
+
+.prices .items .price
+{
+    font-weight: 600;
+
+    margin-left: 24px;
+
+    white-space: nowrap;
+}
+
+
+
+.prices .text_block
+{
+    width: 954px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+
+
+/*---------------
+    Big image
+---------------*/
+.big_image img
+{
+    display: block;
+
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/*-----------
+    Certs
+-----------*/
+.certs
+{
+    padding: 80px 0;
+
+    background: #fafafa;
+}
+
+
+.certs .row
+{
+    margin-bottom: -32px;
+    margin-left: -32px;
+}
+
+
+.certs .row > *
+{
+    width: calc(50% - 32px);
+    margin-bottom: 32px;
+    margin-left: 32px;
+}
+
+
+.certs .cert
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 23px;
+
+    text-decoration: none;
+
+    color: currentColor;
+    border: 1px solid #bdbdbd;
+    background: #fff;
+}
+
+
+.certs .cert .name
+{
+    line-height: 143.622%;
+
+    width: 100%;
+    margin-bottom: 10px;
+
+    color: #828282;
+}
+
+
+.certs .cert .desc
+{
+    line-height: 150%;
+
+    width: calc(100% - 131px);
+
+    color: #191919;
+}
+
+
+.certs .cert .info
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-left: auto;
+
+    gap: 18px;
+}
+
+
+.certs .cert .type img
+{
+    display: block;
+
+    width: 31px;
+}
+
+
+.certs .cert .size
+{
+    line-height: 143.622%;
+
+    color: #191919;
+}
+
+
+
+/*--------------------
+    Reviews on map
+--------------------*/
+.reviews_on_map .map
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 566px;
+
+    background: #ddd;
+}
+
+
+
+/*---------------------
+    Service process
+---------------------*/
+.service_process .row
+{
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-bottom: -32px;
+    margin-left: -32px;
+
+    counter-reset: number;
+}
+
+
+.service_process .row > *
+{
+    width: calc(50% - 32px);
+    margin-bottom: 32px;
+    margin-left: 32px;
+}
+
+
+.service_process .step
+{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 32px;
+
+    background: #fcfcfc;
+}
+
+
+.service_process .step:after
+{
+    font-size: 89px;
+    font-weight: 300;
+    line-height: 120.622%;
+
+    position: absolute;
+    top: 0;
+    right: 24px;
+
+    content: counter(number);
+    counter-increment: number;
+    letter-spacing: -5.34px;
+    text-transform: uppercase;
+
+    color: #cbcbcb;
+}
+
+
+.service_process .step .name
+{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120.622%;
+
+    position: relative;
+}
+
+.service_process .step .name:before
+{
+    position: absolute;
+    top: -16px;
+    left: -32px;
+
+    display: block;
+
+    width: 4px;
+    height: 55px;
+
+    content: '';
+    pointer-events: none;
+
+    background: #e31e24;
+}
+
+
+.service_process .step .desc
+{
+    line-height: 150%;
+
+    margin-top: auto;
+    padding-top: 15px;
+
+    color: #333;
+}
+
+
+.service_process .step .desc li
+{
+    list-style-position: inside;
+}
+
+
+.service_process .image img
+{
+    display: block;
+
+    width: 100%;
+}
+
+
+
+.service_process .text_block
+{
+    margin-top: 32px;
 }
 
 
