@@ -297,12 +297,12 @@ html.custom_scroll
 
 body
 {
-    font: var(--font_size) var(--font_family);
-
     height: 100%;
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height:         fill-available;
+
+    font: var(--font_size) var(--font_family);
 
     color: var(--text_color);
 }
@@ -315,12 +315,12 @@ body.menu_open
 
 button
 {
+    display: inline-block;
+
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
-
-    display: inline-block;
 
     cursor: pointer;
     vertical-align: top;
@@ -334,13 +334,14 @@ button
 .wrap
 {
     position: relative;
-    z-index: 9;
 
     display: flex;
     overflow: clip;
     flex-direction: column;
 
     min-height: 100%;
+
+    z-index: 9;
 
     background: var(--bg);
 }
@@ -433,7 +434,6 @@ button
 .overlay
 {
     position: fixed;
-    z-index: 100;
     top: 0;
     left: 0;
 
@@ -441,6 +441,8 @@ button
 
     width: 100%;
     height: 100%;
+
+    z-index: 100;
 
     background: rgba(9, 9, 9, .75);
 }
@@ -509,13 +511,13 @@ button
 
 .all_link a
 {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 143.622%;
-
     display: inline-block;
 
     padding: 2px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 143.622%;
 
     transition: .2s linear;
     vertical-align: top;
@@ -572,13 +574,13 @@ button
 
 .pagination a
 {
-    font-weight: 500;
-    line-height: 54px;
-
     display: inline-block;
 
     width: 56px;
     height: 56px;
+
+    font-weight: 500;
+    line-height: 54px;
 
     transition: .2s linear;
     text-align: center;
@@ -599,10 +601,10 @@ button
 
 .pagination .sep
 {
+    width: 50px;
+
     font-weight: 500;
     line-height: 50px;
-
-    width: 50px;
 
     text-align: center;
 
@@ -772,12 +774,13 @@ button
 header
 {
     position: relative;
-    z-index: 9;
     top: 0;
     left: 0;
 
     width: 100%;
     padding: 25px 0 15px;
+
+    z-index: 9;
 }
 
 
@@ -876,14 +879,14 @@ header .contacts
 
 header .contacts .phone
 {
-    font-weight: 500;
-    line-height: 143.622%;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-end;
+
+    font-weight: 500;
+    line-height: 143.622%;
 
     text-align: right;
     letter-spacing: .32px;
@@ -915,9 +918,6 @@ header .contacts .phone .whatsapp
 
 header .contacts .callback_btn
 {
-    font-size: 14px;
-    line-height: 143.622%;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -925,6 +925,9 @@ header .contacts .callback_btn
     justify-content: flex-start;
 
     margin-top: 10px;
+
+    font-size: 14px;
+    line-height: 143.622%;
 
     transition: color .2s linear;
     letter-spacing: .42px;
@@ -955,9 +958,6 @@ header .contacts .callback_btn:hover
 
 header .contacts .email
 {
-    font-size: 14px;
-    line-height: 143.622%;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
@@ -965,6 +965,9 @@ header .contacts .email
     justify-content: flex-end;
 
     margin-top: 10px;
+
+    font-size: 14px;
+    line-height: 143.622%;
 
     letter-spacing: .42px;
 
@@ -1026,9 +1029,6 @@ header .menu_item + .menu_item
 
 header .menu_item > a
 {
-    font-weight: 500;
-    line-height: 143.622%;
-
     position: relative;
 
     display: flex;
@@ -1036,6 +1036,9 @@ header .menu_item > a
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+
+    font-weight: 500;
+    line-height: 143.622%;
 
     transition: color .2s linear;
     text-decoration: none;
@@ -1090,7 +1093,6 @@ header .menu_item > a.active
 header .sub_menu
 {
     position: absolute;
-    z-index: 9;
     top: 100%;
     left: 0;
 
@@ -1100,6 +1102,7 @@ header .sub_menu
     margin-top: 20px;
     padding: 32px;
 
+    z-index: 9;
     transition: .2s linear;
     pointer-events: none;
 
@@ -1165,10 +1168,10 @@ header .sub_menu > * + *
 
 header .sub_menu a
 {
+    display: block;
+
     font-weight: 500;
     line-height: 120.622%;
-
-    display: block;
 
     transition: color .2s linear;
     white-space: nowrap;
@@ -1289,14 +1292,14 @@ header .search form :-ms-input-placeholder
 
 header .search .input
 {
-    font-family: var(--font_family);
-    font-size: var(--font_size);
-
     display: block;
 
     width: 100%;
     height: 32px;
     padding: 0 40px 0 0;
+
+    font-family: var(--font_family);
+    font-size: var(--font_size);
 
     color: var(--text_color);
     border: none;
@@ -1420,7 +1423,6 @@ header.fixed .search
 .mob_header
 {
     position: relative;
-    z-index: 9;
     top: 0;
     left: 0;
 
@@ -1428,6 +1430,8 @@ header.fixed .search
 
     width: 100%;
     padding: 16px 0;
+
+    z-index: 9;
 }
 
 
@@ -1466,14 +1470,14 @@ header.fixed .search
 
 .mob_header .contacts .phone
 {
-    font-weight: 500;
-    line-height: 143.622%;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-end;
+
+    font-weight: 500;
+    line-height: 143.622%;
 
     text-align: right;
     letter-spacing: .32px;
@@ -1505,9 +1509,6 @@ header.fixed .search
 
 .mob_header .contacts .callback_btn
 {
-    font-size: 13px;
-    line-height: 143.622%;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -1515,6 +1516,9 @@ header.fixed .search
     justify-content: flex-start;
 
     margin-top: 4px;
+
+    font-size: 13px;
+    line-height: 143.622%;
 
     transition: color .2s linear;
     letter-spacing: .42px;
@@ -1548,9 +1552,6 @@ header.fixed .search
 
 .mob_header .contacts .email
 {
-    font-size: 14px;
-    line-height: 143.622%;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
@@ -1558,6 +1559,9 @@ header.fixed .search
     justify-content: flex-end;
 
     margin-top: 4px;
+
+    font-size: 14px;
+    line-height: 143.622%;
 
     letter-spacing: .42px;
 
@@ -1681,13 +1685,13 @@ aside .block
 
 aside .block .title
 {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 120.622%;
-
     position: relative;
 
     margin-bottom: 15px;
+
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 120.622%;
 
     letter-spacing: .44px;
     text-transform: uppercase;
@@ -1715,10 +1719,10 @@ aside .block .title:before
 
 aside .block .spoler_btn
 {
+    margin-top: 26px;
+
     font-size: 14px;
     line-height: 120.622%;
-
-    margin-top: 26px;
 
     color: #e31e24;
 }
@@ -1756,14 +1760,14 @@ aside .links .items > *
 
 aside .links .items a
 {
-    font-weight: 500;
-    line-height: 120.622%;
-
     position: relative;
 
     display: block;
 
     padding: 13px 0;
+
+    font-weight: 500;
+    line-height: 120.622%;
 
     transition: .2s linear;
     text-decoration: none;
@@ -1825,14 +1829,14 @@ aside .links .items a.active:before
 
 aside .mob_filter_btn
 {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 143.622%;
-
     display: none;
 
     width: 100%;
     padding: 2px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 143.622%;
 
     text-decoration: none;
     letter-spacing: .39px;
@@ -1885,9 +1889,6 @@ aside .filter .field + .field
 
 aside .filter .checkbox
 {
-    font-weight: 500;
-    line-height: 120.622%;
-
     position: relative;
 
     display: flex;
@@ -1898,6 +1899,9 @@ aside .filter .checkbox
 
     min-height: 19px;
     padding-left: 31px;
+
+    font-weight: 500;
+    line-height: 120.622%;
 
     cursor: pointer;
 
@@ -1928,6 +1932,7 @@ aside .filter .checkbox .check
 aside .filter .checkbox .check:before
 {
     position: absolute;
+    inset: 0;
 
     display: block;
 
@@ -1940,8 +1945,6 @@ aside .filter .checkbox .check:before
 
     opacity: 0;
     background: #e31e24;
-
-    inset: 0;
 }
 
 
@@ -1976,13 +1979,13 @@ aside .filter .submit
 
 aside .filter .submit_btn
 {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 143.622%;
-
     display: inline-block;
 
     padding: 2px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 143.622%;
 
     text-align: center;
     vertical-align: top;
@@ -2015,12 +2018,12 @@ aside .filter .submit_btn:hover span
 
 aside .filter .reset_btn
 {
-    font-size: 14px;
-    line-height: 120.622%;
-
     display: block;
 
     margin-left: auto;
+
+    font-size: 14px;
+    line-height: 120.622%;
 
     transition: .2s linear;
 
@@ -2115,16 +2118,16 @@ aside .filter .reset_btn:hover
 
 .page_title
 {
-    font-size: var(--font_size_title);
-    font-weight: 700;
-    line-height: 120.622%;
-
     position: relative;
 
     display: block;
 
     margin-bottom: 20px;
     padding-top: 15px;
+
+    font-size: var(--font_size_title);
+    font-weight: 700;
+    line-height: 120.622%;
 
     letter-spacing: 1.2px;
 }
@@ -2171,15 +2174,15 @@ aside .filter .reset_btn:hover
 
 .block_head .title
 {
-    font-size: var(--font_size_title);
-    font-weight: 700;
-    line-height: 120.622%;
-
     position: relative;
 
     display: block;
 
     padding-left: 91px;
+
+    font-size: var(--font_size_title);
+    font-weight: 700;
+    line-height: 120.622%;
 
     letter-spacing: 1.8px;
     text-transform: uppercase;
@@ -2206,20 +2209,20 @@ aside .filter .reset_btn:hover
 
 .block_head .sub_title
 {
+    margin-top: 32px;
+
     font-size: 24px;
     font-weight: 500;
     line-height: 150%;
-
-    margin-top: 32px;
 }
 
 
 .block_head .desc
 {
+    margin-top: 47px;
+
     font-size: 18px;
     line-height: 150%;
-
-    margin-top: 47px;
 
     color: #333;
 }
@@ -2314,14 +2317,14 @@ aside .filter .reset_btn:hover
 
 .form .input
 {
-    font-family: var(--font_family);
-    font-size: var(--font_size);
-
     display: block;
 
     width: 100%;
     height: 53px;
     padding: 0 23px;
+
+    font-family: var(--font_family);
+    font-size: var(--font_size);
 
     transition: border-color .2s linear;
 
@@ -2339,14 +2342,14 @@ aside .filter .reset_btn:hover
 
 .form textarea
 {
-    font-family: var(--font_family);
-    font-size: var(--font_size);
-
     display: block;
 
     width: 100%;
     height: 132px;
     padding: 15px 23px;
+
+    font-family: var(--font_family);
+    font-size: var(--font_size);
 
     resize: none;
     transition: border-color .2s linear;
@@ -2385,9 +2388,6 @@ aside .filter .reset_btn:hover
 
 .form .file label
 {
-    font-size: 14px;
-    line-height: 130.122%;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -2396,6 +2396,9 @@ aside .filter .reset_btn:hover
 
     height: 53px;
     padding: 0 12px;
+
+    font-size: 14px;
+    line-height: 130.122%;
 
     cursor: pointer;
     letter-spacing: .28px;
@@ -2432,9 +2435,6 @@ aside .filter .reset_btn:hover
 
 .form .checkbox
 {
-    font-size: 12px;
-    line-height: 130.122%;
-
     position: relative;
 
     display: flex;
@@ -2445,6 +2445,9 @@ aside .filter .reset_btn:hover
 
     min-height: 24px;
     padding-left: 46px;
+
+    font-size: 12px;
+    line-height: 130.122%;
 
     cursor: pointer;
 
@@ -2522,13 +2525,13 @@ aside .filter .reset_btn:hover
 
 .form .submit_btn
 {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 143.622%;
-
     display: inline-block;
 
     padding: 2px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 143.622%;
 
     text-align: center;
     vertical-align: top;
@@ -2605,16 +2608,16 @@ aside .filter .reset_btn:hover
 
 .text_block h1
 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 120.622%;
-
     position: relative;
 
     display: block;
 
     margin-bottom: 32px !important;
     padding-top: 12px;
+
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120.622%;
 
     letter-spacing: 1.2px;
 
@@ -2640,16 +2643,16 @@ aside .filter .reset_btn:hover
 
 .text_block h2
 {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 120.622%;
-
     position: relative;
 
     display: block;
 
     margin-bottom: 40px !important;
     padding-top: 12px;
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 120.622%;
 
     letter-spacing: 1.08px;
 
@@ -2675,16 +2678,16 @@ aside .filter .reset_btn:hover
 
 .text_block h3
 {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 120.622%;
-
     position: relative;
 
     display: block;
 
     margin-bottom: 32px !important;
     padding-top: 12px;
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 120.622%;
 
     letter-spacing: .9px;
 
@@ -2761,7 +2764,6 @@ aside .filter .reset_btn:hover
 .text_block figure .img:before
 {
     position: absolute;
-    z-index: 1;
     right: 0;
     bottom: 0;
 
@@ -2773,6 +2775,7 @@ aside .filter .reset_btn:hover
     max-height: 100%;
 
     content: '';
+    z-index: 1;
 
     background: #eee;
 }
@@ -2780,7 +2783,6 @@ aside .filter .reset_btn:hover
 .text_block figure .img:after
 {
     position: absolute;
-    z-index: 2;
     bottom: 0;
     left: 0;
 
@@ -2790,6 +2792,7 @@ aside .filter .reset_btn:hover
     height: 10px;
 
     content: '';
+    z-index: 2;
 
     background: #e31e24;
 }
@@ -2797,18 +2800,19 @@ aside .filter .reset_btn:hover
 .text_block figure img
 {
     position: relative;
+
     z-index: 3;
 }
 
 
 .text_block figcaption
 {
+    margin-top: 10px;
+    padding-bottom: 19px;
+
     font-size: 15px;
     font-style: italic;
     line-height: 150%;
-
-    margin-top: 10px;
-    padding-bottom: 19px;
 
     color: #828282;
     border-bottom: 1px solid #828282;
@@ -2875,11 +2879,11 @@ aside .filter .reset_btn:hover
 
 .text_block table th
 {
+    padding: 8px;
+
     font-size: var(--font_size);
     font-weight: 700;
     line-height: 120.622%;
-
-    padding: 8px;
 
     text-align: left;
     vertical-align: middle;
@@ -2908,10 +2912,10 @@ aside .filter .reset_btn:hover
 
 .text_block table td
 {
+    padding: 8px;
+
     font-size: var(--font_size);
     line-height: 120.622%;
-
-    padding: 8px;
 
     text-align: left;
     vertical-align: middle;
@@ -3021,13 +3025,13 @@ aside .filter .reset_btn:hover
 
 .text_block ol li:before
 {
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 150%;
-
     position: absolute;
     top: 0;
     left: 0;
+
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 150%;
 
     content: counter(li) '.';
     counter-increment: li;
@@ -3115,7 +3119,6 @@ aside .filter .reset_btn:hover
 .main_slider .img
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
@@ -3123,6 +3126,8 @@ aside .filter .reset_btn:hover
 
     width: 100%;
     height: 100%;
+
+    z-index: 1;
 
     object-fit: cover;
 }
@@ -3144,7 +3149,6 @@ aside .filter .reset_btn:hover
 .main_slider .cont
 {
     position: relative;
-    z-index: 3;
 
     display: flex;
     align-content: center;
@@ -3155,6 +3159,8 @@ aside .filter .reset_btn:hover
     min-height: 600px;
     padding-top: 117px;
     padding-bottom: 127px;
+
+    z-index: 3;
 }
 
 
@@ -3178,25 +3184,25 @@ aside .filter .reset_btn:hover
 
 .main_slider .desc
 {
-    font-size: 18px;
-    line-height: 143.622%;
-
     width: 461px;
     max-width: 100%;
     margin-top: 29px;
+
+    font-size: 18px;
+    line-height: 143.622%;
 }
 
 
 .main_slider .link
 {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 143.622%;
-
     display: inline-block;
 
     margin-top: 36px;
     padding: 2px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 143.622%;
 
     text-align: center;
     vertical-align: top;
@@ -3230,7 +3236,6 @@ aside .filter .reset_btn:hover
 .main_slider .controls
 {
     position: absolute;
-    z-index: 9;
     bottom: 51px;
     left: 50%;
 
@@ -3242,6 +3247,7 @@ aside .filter .reset_btn:hover
 
     margin-left: -620px;
 
+    z-index: 9;
     white-space: nowrap;
 }
 
@@ -3293,13 +3299,13 @@ aside .filter .reset_btn:hover
 
 .about_info .data .title
 {
-    font-size: 34px;
-    font-weight: 500;
-    line-height: 120.622%;
-
     position: relative;
 
     margin-bottom: 72px;
+
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 120.622%;
 
     color: #1f2023;
 }
@@ -3324,10 +3330,10 @@ aside .filter .reset_btn:hover
 
 .about_info .desc
 {
+    padding-left: 68px;
+
     font-size: 18px;
     line-height: 150%;
-
-    padding-left: 68px;
 
     color: #333;
 }
@@ -3383,13 +3389,13 @@ aside .filter .reset_btn:hover
 
 .about_info .link a
 {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 143.622%;
-
     display: inline-block;
 
     padding: 2px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 143.622%;
 
     transition: .2s linear;
     vertical-align: top;
@@ -3439,7 +3445,6 @@ aside .filter .reset_btn:hover
 .about_info .image:after
 {
     position: absolute;
-    z-index: 1;
     right: 0;
     bottom: 0;
 
@@ -3447,6 +3452,7 @@ aside .filter .reset_btn:hover
     height: 340px;
 
     content: '';
+    z-index: 1;
 
     background: #eee;
 }
@@ -3455,18 +3461,18 @@ aside .filter .reset_btn:hover
 .about_info .image img
 {
     position: relative;
-    z-index: 2;
 
     display: block;
 
     width: 100%;
+
+    z-index: 2;
 }
 
 
 .about_info .image:before
 {
     position: absolute;
-    z-index: 2;
     bottom: 0;
     left: 0;
 
@@ -3475,6 +3481,7 @@ aside .filter .reset_btn:hover
     height: 11px;
 
     content: '';
+    z-index: 2;
 
     background: #e31e24;
 }
@@ -3527,11 +3534,12 @@ aside .filter .reset_btn:hover
 
 .services .service .name
 {
+    position: relative;
+
     font-size: 20px;
     font-weight: 500;
     line-height: 120.622%;
 
-    position: relative;
     z-index: 2;
 
     color: #000;
@@ -3556,13 +3564,14 @@ aside .filter .reset_btn:hover
 
 .services .service .desc
 {
+    position: relative;
+
+    margin-top: 30px;
+
     font-size: 15px;
     line-height: 140%;
 
-    position: relative;
     z-index: 2;
-
-    margin-top: 30px;
 
     color: #333;
 }
@@ -3577,7 +3586,6 @@ aside .filter .reset_btn:hover
 .services .service .thumb
 {
     position: absolute;
-    z-index: 1;
     right: 0;
     bottom: 0;
 
@@ -3587,6 +3595,7 @@ aside .filter .reset_btn:hover
     flex-wrap: wrap;
     justify-content: flex-end;
 
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -3601,10 +3610,6 @@ aside .filter .reset_btn:hover
 
 .services .get_consult_btn
 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 120.622%;
-
     position: relative;
 
     display: flex;
@@ -3614,6 +3619,10 @@ aside .filter .reset_btn:hover
     justify-content: flex-start;
 
     padding: 32px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120.622%;
 
     transition: background .2s linear;
     text-align: left;
@@ -3709,7 +3718,6 @@ aside .filter .reset_btn:hover
 .advantages .icon:before
 {
     position: absolute;
-    z-index: 1;
     bottom: 0;
     left: 0;
 
@@ -3719,6 +3727,7 @@ aside .filter .reset_btn:hover
     height: 2px;
 
     content: '';
+    z-index: 1;
     pointer-events: none;
 
     background: #e31e24;
@@ -3726,16 +3735,16 @@ aside .filter .reset_btn:hover
 
 .advantages .icon:after
 {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     font-size: 107px;
     font-weight: 300;
     line-height: 120.622%;
 
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-
     content: counter(number);
+    z-index: 2;
     counter-increment: number;
     letter-spacing: -6.42px;
     text-transform: uppercase;
@@ -3748,12 +3757,13 @@ aside .filter .reset_btn:hover
 .advantages .icon img
 {
     position: relative;
-    z-index: 3;
 
     display: block;
 
     max-width: 100%;
     max-height: 100%;
+
+    z-index: 3;
 }
 
 .advantages .item:nth-child(1) .icon img
@@ -3794,10 +3804,10 @@ aside .filter .reset_btn:hover
 
 .advantages .name
 {
+    margin-bottom: 19px;
+
     font-weight: 700;
     line-height: 140%;
-
-    margin-bottom: 19px;
 
     letter-spacing: .16px;
 
@@ -3835,11 +3845,11 @@ aside .filter .reset_btn:hover
 
 .advantages .bottom
 {
+    margin-top: 80px;
+
     font-size: 20px;
     font-weight: 600;
     line-height: 150%;
-
-    margin-top: 80px;
 }
 
 
@@ -3907,7 +3917,6 @@ aside .filter .reset_btn:hover
 .categories .category:before
 {
     position: absolute;
-    z-index: 2;
     top: 0;
     left: 0;
 
@@ -3917,6 +3926,7 @@ aside .filter .reset_btn:hover
     height: 100%;
 
     content: '';
+    z-index: 2;
     transition: opacity .2s linear;
     pointer-events: none;
 
@@ -3928,7 +3938,6 @@ aside .filter .reset_btn:hover
 .categories .category .bg
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
@@ -3937,6 +3946,7 @@ aside .filter .reset_btn:hover
     width: 100%;
     height: 100%;
 
+    z-index: 1;
     pointer-events: none;
 
     opacity: .2;
@@ -3947,13 +3957,13 @@ aside .filter .reset_btn:hover
 
 .categories .category .name
 {
+    position: relative;
+
     font-size: 18px;
     font-weight: 600;
     line-height: 120.622%;
 
-    position: relative;
     z-index: 5;
-
     transition: color .2s linear;
 
     color: #1f2023;
@@ -3963,10 +3973,10 @@ aside .filter .reset_btn:hover
 .categories .category .thumb
 {
     position: absolute;
-    z-index: 2;
     right: 0;
     bottom: 0;
 
+    z-index: 2;
     pointer-events: none;
 }
 
@@ -4041,7 +4051,6 @@ aside .filter .reset_btn:hover
 .categories .category .arr
 {
     position: absolute;
-    z-index: 3;
     right: 4px;
     bottom: 5px;
 
@@ -4054,6 +4063,7 @@ aside .filter .reset_btn:hover
     width: 46px;
     height: 46px;
 
+    z-index: 3;
     transition: background .2s linear;
 
     color: #fff;
@@ -4268,15 +4278,15 @@ aside .filter .reset_btn:hover
 
 .projects .project .desc
 {
-    font-size: 15px;
-    line-height: 145%;
-
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;
 
     height: 226px;
     margin-top: 32px;
+
+    font-size: 15px;
+    line-height: 145%;
 
     color: #333;
 
@@ -4292,13 +4302,13 @@ aside .filter .reset_btn:hover
 
 .projects .project .link a
 {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 143.622%;
-
     display: inline-block;
 
     padding: 2px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 143.622%;
 
     transition: .2s linear;
     text-align: center;
@@ -4506,12 +4516,12 @@ aside .filter .reset_btn:hover
 .order_form .img
 {
     position: absolute;
-    z-index: 1;
     top: -38px;
     right: 86px;
 
     display: block;
 
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -4519,12 +4529,12 @@ aside .filter .reset_btn:hover
 .order_form .img2
 {
     position: absolute;
-    z-index: 1;
     top: -1px;
     right: 148px;
 
     display: block;
 
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -4603,8 +4613,6 @@ aside .filter .reset_btn:hover
 
 .filter_selected .btn
 {
-    font-size: 14px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -4612,6 +4620,8 @@ aside .filter .reset_btn:hover
     justify-content: space-between;
 
     padding: 7px 9px 7px 15px;
+
+    font-size: 14px;
 
     transition: .2s linear;
     text-align: left;
@@ -4705,13 +4715,13 @@ aside .filter .reset_btn:hover
 
 .products_head .nice-select .current
 {
-    line-height: 33px;
-
     display: block;
     overflow: hidden;
 
     height: 35px;
     padding: 0 62px 0 14px;
+
+    line-height: 33px;
 
     cursor: pointer;
     transition: border-color .2s linear;
@@ -4727,7 +4737,6 @@ aside .filter .reset_btn:hover
 .products_head .nice-select-dropdown
 {
     position: absolute;
-    z-index: 9;
     top: 100%;
     left: 0;
 
@@ -4738,6 +4747,7 @@ aside .filter .reset_btn:hover
     margin-top: -1px;
     padding: 4px 0;
 
+    z-index: 9;
     transition: .2s linear;
 
     opacity: 0;
@@ -4941,14 +4951,14 @@ aside .filter .reset_btn:hover
 
 .products .product .sticker
 {
-    font-size: 12px;
-    font-weight: 500;
-
     position: absolute;
     top: -1px;
     left: 13px;
 
     padding: 6px 12px;
+
+    font-size: 12px;
+    font-weight: 500;
 
     letter-spacing: .36px;
     text-transform: uppercase;
@@ -5029,9 +5039,6 @@ aside .filter .reset_btn:hover
 
 .products .product .articul
 {
-    font-size: 15px;
-    line-height: 120.622%;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -5039,6 +5046,9 @@ aside .filter .reset_btn:hover
     justify-content: flex-start;
 
     margin-top: 39px;
+
+    font-size: 15px;
+    line-height: 120.622%;
 
     letter-spacing: .45px;
 
@@ -5080,13 +5090,13 @@ aside .filter .reset_btn:hover
 
 .products .product .link a
 {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 143.622%;
-
     display: inline-block;
 
     padding: 2px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 143.622%;
 
     transition: .2s linear;
     vertical-align: top;
@@ -5186,13 +5196,13 @@ aside .filter .reset_btn:hover
 
 .products_bottom .nice-select .current
 {
-    line-height: 54px;
-
     display: block;
     overflow: hidden;
 
     height: 56px;
     padding: 0 40px 0 16px;
+
+    line-height: 54px;
 
     cursor: pointer;
     transition: border-color .2s linear;
@@ -5208,7 +5218,6 @@ aside .filter .reset_btn:hover
 .products_bottom .nice-select-dropdown
 {
     position: absolute;
-    z-index: 9;
     top: 100%;
     left: 0;
 
@@ -5219,6 +5228,7 @@ aside .filter .reset_btn:hover
     margin-top: -1px;
     padding: 4px 0;
 
+    z-index: 9;
     transition: .2s linear;
 
     opacity: 0;
@@ -5352,7 +5362,6 @@ aside .filter .reset_btn:hover
 .product_info .images .big .item .zoom
 {
     position: absolute;
-    z-index: 3;
     right: 22px;
     bottom: 22px;
 
@@ -5360,6 +5369,8 @@ aside .filter .reset_btn:hover
 
     width: 23px;
     height: 22px;
+
+    z-index: 3;
 
     color: #c4c4c4;
 }
@@ -5511,16 +5522,16 @@ aside .filter .reset_btn:hover
 
 .product_info .product_name
 {
-    font-size: var(--font_size_title);
-    font-weight: 700;
-    line-height: 120.622%;
-
     position: relative;
 
     display: block;
 
     margin-bottom: 34px;
     padding-top: 15px;
+
+    font-size: var(--font_size_title);
+    font-weight: 700;
+    line-height: 120.622%;
 
     letter-spacing: 1.2px;
 }
@@ -5544,8 +5555,6 @@ aside .filter .reset_btn:hover
 
 .product_info .features > *
 {
-    line-height: 120.622%;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
@@ -5553,6 +5562,8 @@ aside .filter .reset_btn:hover
     justify-content: space-between;
 
     padding: 8px 16px;
+
+    line-height: 120.622%;
 
     color: #1f2023;
     background: #eee;
@@ -5573,10 +5584,10 @@ aside .filter .reset_btn:hover
 
 .product_info .features .val
 {
-    font-weight: 500;
-
     width: calc(100% - 165px);
     padding-left: 16px;
+
+    font-weight: 500;
 }
 
 
@@ -5612,13 +5623,13 @@ aside .filter .reset_btn:hover
 
 .product_info .buy .order_btn
 {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 143.622%;
-
     display: inline-block;
 
     padding: 2px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 143.622%;
 
     text-align: center;
     vertical-align: top;
@@ -5659,14 +5670,14 @@ aside .filter .reset_btn:hover
 
 .product_info .description .title
 {
-    font-size: 27px;
-    font-weight: 700;
-    line-height: 120.622%;
-
     position: relative;
 
     margin-bottom: 24px;
     padding-top: 12px;
+
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 120.622%;
 
     letter-spacing: .81px;
 }
@@ -5795,11 +5806,11 @@ aside .filter .reset_btn:hover
 
 .contacts_info .label
 {
+    margin-bottom: 23px;
+
     font-size: 20px;
     font-weight: 600;
     line-height: 143.622%;
-
-    margin-bottom: 23px;
 
     letter-spacing: .4px;
 }
@@ -5807,14 +5818,14 @@ aside .filter .reset_btn:hover
 
 .contacts_info .location
 {
-    font-size: 17px;
-    line-height: 150%;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-size: 17px;
+    line-height: 150%;
 }
 
 .contacts_info .location .icon
@@ -5831,11 +5842,11 @@ aside .filter .reset_btn:hover
 
 .contacts_info .time
 {
-    font-size: 17px;
-    line-height: 143.622%;
-
     margin-top: 28px;
     padding-left: 35px;
+
+    font-size: 17px;
+    line-height: 143.622%;
 
     letter-spacing: .34px;
 }
@@ -5843,11 +5854,11 @@ aside .filter .reset_btn:hover
 
 .contacts_info .days_off
 {
-    font-size: 17px;
-    line-height: 143.622%;
-
     margin-top: 6px;
     padding-left: 35px;
+
+    font-size: 17px;
+    line-height: 143.622%;
 
     letter-spacing: .34px;
 
@@ -5874,15 +5885,15 @@ aside .filter .reset_btn:hover
 
 .contacts_info .phone a
 {
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 143.622%;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 143.622%;
 
     text-decoration: none;
     letter-spacing: .32px;
@@ -5928,9 +5939,6 @@ aside .filter .reset_btn:hover
 
 .contacts_info .callback_btn
 {
-    font-size: 17px;
-    line-height: 143.622%;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -5938,6 +5946,9 @@ aside .filter .reset_btn:hover
     justify-content: flex-start;
 
     margin-top: 51px;
+
+    font-size: 17px;
+    line-height: 143.622%;
 
     transition: color .2s linear;
     text-align: left;
@@ -5978,14 +5989,14 @@ aside .filter .reset_btn:hover
 
 .contacts_info .email a
 {
-    font-size: 17px;
-    line-height: 143.622%;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-size: 17px;
+    line-height: 143.622%;
 
     transition: color .2s linear;
 
@@ -6101,11 +6112,11 @@ aside .filter .reset_btn:hover
 
 .sub_services .service .name
 {
+    position: relative;
+
     font-size: 20px;
     font-weight: 500;
     line-height: 120.622%;
-
-    position: relative;
 }
 
 
@@ -6129,10 +6140,10 @@ aside .filter .reset_btn:hover
 
 .sub_services .service .desc
 {
+    margin-top: 30px;
+
     font-size: 15px;
     line-height: 140%;
-
-    margin-top: 30px;
 
     color: #333;
 }
@@ -6153,7 +6164,6 @@ aside .filter .reset_btn:hover
 .sub_services .service .thumb img
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
@@ -6162,19 +6172,21 @@ aside .filter .reset_btn:hover
     width: 100%;
     height: 100%;
 
+    z-index: 1;
+
     object-fit: cover;
 }
 
 
 .sub_services .bottom
 {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 150%;
-
     width: 918px;
     max-width: 100%;
     margin-top: 32px;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
 }
 
 
@@ -6190,11 +6202,11 @@ aside .filter .reset_btn:hover
 
 .prices .service .title
 {
+    margin-bottom: 39px;
+
     font-size: 30px;
     font-weight: 700;
     line-height: 120.622%;
-
-    margin-bottom: 39px;
 
     letter-spacing: .9px;
 }
@@ -6208,11 +6220,11 @@ aside .filter .reset_btn:hover
 
 .prices .section .name
 {
+    margin-bottom: 11px;
+
     font-size: 20px;
     font-weight: 600;
     line-height: 150%;
-
-    margin-bottom: 11px;
 
     letter-spacing: .6px;
 }
@@ -6220,9 +6232,6 @@ aside .filter .reset_btn:hover
 
 .prices .items > *
 {
-    font-size: 18px;
-    line-height: 191%;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
@@ -6230,6 +6239,9 @@ aside .filter .reset_btn:hover
     justify-content: space-between;
 
     padding: 2px 24px;
+
+    font-size: 18px;
+    line-height: 191%;
 
     background: #eee;
 }
@@ -6243,9 +6255,9 @@ aside .filter .reset_btn:hover
 
 .prices .items .price
 {
-    font-weight: 600;
-
     margin-left: 24px;
+
+    font-weight: 600;
 
     white-space: nowrap;
 }
@@ -6320,10 +6332,10 @@ aside .filter .reset_btn:hover
 
 .certs .cert .name
 {
-    line-height: 143.622%;
-
     width: 100%;
     margin-bottom: 10px;
+
+    line-height: 143.622%;
 
     color: #828282;
 }
@@ -6331,9 +6343,9 @@ aside .filter .reset_btn:hover
 
 .certs .cert .desc
 {
-    line-height: 150%;
-
     width: calc(100% - 131px);
+
+    line-height: 150%;
 
     color: #191919;
 }
@@ -6424,13 +6436,13 @@ aside .filter .reset_btn:hover
 
 .service_process .step:after
 {
-    font-size: 89px;
-    font-weight: 300;
-    line-height: 120.622%;
-
     position: absolute;
     top: 0;
     right: 24px;
+
+    font-size: 89px;
+    font-weight: 300;
+    line-height: 120.622%;
 
     content: counter(number);
     counter-increment: number;
@@ -6443,11 +6455,11 @@ aside .filter .reset_btn:hover
 
 .service_process .step .name
 {
+    position: relative;
+
     font-size: 20px;
     font-weight: 500;
     line-height: 120.622%;
-
-    position: relative;
 }
 
 .service_process .step .name:before
@@ -6470,10 +6482,10 @@ aside .filter .reset_btn:hover
 
 .service_process .step .desc
 {
-    line-height: 150%;
-
     margin-top: auto;
     padding-top: 15px;
+
+    line-height: 150%;
 
     color: #333;
 }
@@ -6556,14 +6568,14 @@ footer .contacts .phone
 
 footer .contacts .phone a
 {
-    font-weight: 600;
-    line-height: 143.622%;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-weight: 600;
+    line-height: 143.622%;
 
     text-decoration: none;
     letter-spacing: .32px;
@@ -6609,14 +6621,14 @@ footer .contacts .whatsapp
 
 footer .contacts .callback_btn
 {
-    font-size: 14px;
-    line-height: 143.622%;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-size: 14px;
+    line-height: 143.622%;
 
     transition: color .2s linear;
     text-align: left;
@@ -6655,14 +6667,14 @@ footer .contacts .email
 
 footer .contacts .email a
 {
-    font-size: 14px;
-    line-height: 143.622%;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-size: 14px;
+    line-height: 143.622%;
 
     transition: color .2s linear;
 
@@ -6693,10 +6705,6 @@ footer .contacts .email a:hover
 
 footer .links .title
 {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 130.122%;
-
     position: relative;
 
     display: flex;
@@ -6707,6 +6715,10 @@ footer .links .title
 
     margin-bottom: 28px;
     padding-bottom: 32px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130.122%;
 
     pointer-events: none;
 
@@ -6755,13 +6767,13 @@ footer .links .items > * + *
 
 footer .links .items a
 {
-    font-size: 15px;
-    line-height: 130.122%;
-
     display: inline-block;
 
     margin: 0 -13px;
     padding: 6px 13px;
+
+    font-size: 15px;
+    line-height: 130.122%;
 
     transition: background .2s linear;
     vertical-align: top;
@@ -6781,10 +6793,10 @@ footer .links .items a.active
 
 footer .bottom
 {
+    padding: 25px 0 24px;
+
     font-size: 13px;
     line-height: 130.122%;
-
-    padding: 25px 0 24px;
 
     color: #bdbdbd;
     background: #37383c;
@@ -6827,14 +6839,14 @@ footer .bottom a
 
 .modal_title
 {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 120.622%;
-
     position: relative;
 
     margin-bottom: 26px;
     padding-left: 48px;
+
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 120.622%;
 
     letter-spacing: 1.25px;
     text-transform: uppercase;

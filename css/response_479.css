@@ -502,9 +502,9 @@
     ---------------------*/
     .service_process .step:after
     {
-        font-size: 64px;
-
         right: 20px;
+
+        font-size: 64px;
     }
 
 

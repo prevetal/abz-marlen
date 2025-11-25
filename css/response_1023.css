@@ -62,7 +62,6 @@
     header
     {
         position: fixed;
-        z-index: 101;
         top: 0;
         left: 0;
 
@@ -74,6 +73,7 @@
         margin: 0;
         padding: 0;
 
+        z-index: 101;
         transition: transform .3s linear;
         transform: translateX(-100%);
 
@@ -394,23 +394,23 @@
     ----------------*/
     .text_block h1
     {
-        font-size: 32px;
-
         margin-bottom: 24px !important;
+
+        font-size: 32px;
     }
 
     .text_block h2
     {
-        font-size: 28px;
-
         margin-bottom: 24px !important;
+
+        font-size: 28px;
     }
 
     .text_block h3
     {
-        font-size: 24px;
-
         margin-bottom: 20px !important;
+
+        font-size: 24px;
     }
 
 
@@ -530,10 +530,10 @@
 
     .main_slider .desc
     {
-        font-size: var(--font_size);
-
         width: 388px;
         margin-top: 20px;
+
+        font-size: var(--font_size);
     }
 
 
@@ -657,9 +657,9 @@
 
     .services .get_consult_btn
     {
-        font-size: 17px;
-
         order: 3;
+
+        font-size: 17px;
     }
 
 
@@ -919,9 +919,9 @@
 
     .product_info .buy .price
     {
-        font-size: 18px;
-
         width: 100%;
+
+        font-size: 18px;
     }
 
 
@@ -1001,9 +1001,9 @@
 
     .contacts_info .callback_btn
     {
-        font-size: var(--font_size);
-
         margin-top: 44px;
+
+        font-size: var(--font_size);
     }
 
 
@@ -1050,9 +1050,9 @@
     ------------*/
     .prices .service .title
     {
-        font-size: 24px;
-
         margin-bottom: 28px;
+
+        font-size: 24px;
     }
 
 

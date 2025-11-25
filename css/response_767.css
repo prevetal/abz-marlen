@@ -41,18 +41,18 @@
 
     .pagination a
     {
-        line-height: 42px;
-
         width: 44px;
         height: 44px;
+
+        line-height: 42px;
     }
 
 
     .pagination .sep
     {
-        line-height: 44px;
-
         width: 44px;
+
+        line-height: 44px;
     }
 
 
@@ -169,9 +169,9 @@
 
     .block_head .desc
     {
-        font-size: 14px;
-
         margin-top: 20px;
+
+        font-size: 14px;
     }
 
 
@@ -247,9 +247,9 @@
 
     .text_block .message.big
     {
-        font-size: 15px;
-
         padding: 20px;
+
+        font-size: 15px;
     }
 
 
@@ -304,9 +304,9 @@
 
     .about_info .data .title
     {
-        font-size: 24px;
-
         margin-bottom: 48px;
+
+        font-size: 24px;
     }
 
     .about_info .data .title:before
@@ -406,9 +406,9 @@
 
     .advantages .bottom
     {
-        font-size: 16px;
-
         margin-top: 24px;
+
+        font-size: 16px;
     }
 
 
@@ -617,9 +617,9 @@
 
     .filter_selected .btn
     {
-        font-size: 12px;
-
         padding-left: 9px;
+
+        font-size: 12px;
     }
 
 
@@ -724,9 +724,9 @@
 
     .products_bottom .nice-select .current
     {
-        line-height: 42px;
-
         height: 44px;
+
+        line-height: 42px;
     }
 
 
@@ -834,9 +834,9 @@
 
     .contacts_info .callback_btn
     {
-        font-size: 14px;
-
         margin-top: 28px;
+
+        font-size: 14px;
     }
 
 
@@ -890,25 +890,25 @@
 
     .prices .service .title
     {
-        font-size: 22px;
-
         margin-bottom: 24px;
+
+        font-size: 22px;
     }
 
 
     .prices .section .name
     {
-        font-size: 16px;
-
         margin-bottom: 8px;
+
+        font-size: 16px;
     }
 
 
     .prices .items > *
     {
-        font-size: 14px;
-
         padding: 2px 12px;
+
+        font-size: 14px;
     }
 
 
