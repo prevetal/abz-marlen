@@ -59,7 +59,8 @@
     }
 
 
-    header
+    header,
+    header.fixed
     {
         position: fixed;
         top: 0;
@@ -76,8 +77,10 @@
         z-index: 101;
         transition: transform .3s linear;
         transform: translateX(-100%);
+        -webkit-animation: none;
+                animation: none;
 
-        background: #fff;
+        background: var(--bg);
     }
 
     header.show
@@ -146,6 +149,12 @@
     header .contacts .email
     {
         justify-content: flex-start;
+    }
+
+
+    header .links
+    {
+        display: none;
     }
 
 
@@ -234,17 +243,6 @@
     {
         width: 100%;
         margin-bottom: 40px;
-    }
-
-
-    header.fixed
-    {
-        padding: 0;
-
-        -webkit-animation: none;
-                animation: none;
-
-        background: none;
     }
 
 
@@ -921,6 +919,12 @@
     {
         width: 100%;
 
+        font-size: 26px;
+    }
+
+
+    .product_info .buy .price.request
+    {
         font-size: 18px;
     }
 
@@ -1087,6 +1091,334 @@
     {
         width: 100%;
         margin-left: 0;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .titles
+    {
+        padding-inline: 13px 1px;
+        padding-bottom: 8px;
+    }
+
+
+
+    .cart_info .product
+    {
+        padding-block: 24px;
+        padding-inline: 12px 0;
+    }
+
+
+    .cart_info .product .remove_btn:before
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        display: block;
+
+        width: 48px;
+        min-width: 100%;
+        height: 48px;
+        min-height: 100%;
+
+        content: '';
+        transform: translate(-50%, -50%);
+    }
+
+
+    .cart_info .product .col_price
+    {
+        font-size: 16px;
+    }
+
+
+    .cart_info .product .amount .btn
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .cart_info .product .amount .input
+    {
+        width: 48px;
+        height: 40px;
+    }
+
+
+    .cart_info .product .col_total_price
+    {
+        font-size: 18px;
+    }
+
+
+
+    .cart_info .col_thumb
+    {
+        width: 100px;
+    }
+
+
+    .cart_info .col_info
+    {
+        width: calc(100% - 508px);
+    }
+
+
+    .cart_info .col_amount
+    {
+        width: 128px;
+    }
+
+
+    .cart_info .col_price,
+    .cart_info .col_total_price
+    {
+        width: 120px;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .section .title
+    {
+        margin-bottom: 24px;
+
+        font-size: 30px;
+    }
+
+
+
+    .checkout_info .form .columns
+    {
+        --form_columns_offset: 24px;
+    }
+
+
+    .checkout_info .form .input
+    {
+        font-size: 16px;
+    }
+
+
+    .checkout_info .form .label
+    {
+        font-size: 14px;
+    }
+
+
+    .checkout_info .form .columns > *.width1of4
+    {
+        width: calc(50% - var(--form_columns_offset));
+    }
+
+
+
+    .checkout_info .legal_entity .checkbox
+    {
+        font-size: 20px;
+    }
+
+
+    .checkout_info .legal_entity .data
+    {
+        padding-top: 24px;
+    }
+
+
+
+    .checkout_info .delivery_methods label > div
+    {
+        min-height: 80px;
+        padding-block: 16px;
+        padding-inline: 24px;
+    }
+
+
+    .checkout_info .delivery_methods label .head
+    {
+        padding-left: 36px;
+    }
+
+
+    .checkout_info .delivery_methods label .check
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    .checkout_info .delivery_methods label .faster
+    {
+        width: 244px;
+
+        font-size: 12px;
+
+        gap: 8px;
+    }
+
+
+    .checkout_info .delivery_methods label .faster .icon
+    {
+        width: 52px;
+        height: 28px;
+    }
+
+
+    .checkout_info .delivery_methods label .faster .icon + *
+    {
+        width: calc(100% - 60px);
+    }
+
+
+    .checkout_info .delivery_methods label .data
+    {
+        padding-left: 36px;
+    }
+
+
+    .checkout_info .delivery_methods .notice
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .checkout_info .delivery_methods .notice .icon
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .checkout_info .delivery_methods .notice .icon + *
+    {
+        width: calc(100% - 46px);
+    }
+
+
+    .checkout_info .delivery_methods .pickup_point
+    {
+        font-size: 15px;
+    }
+
+
+
+    .checkout_info .payment_methods
+    {
+        margin-bottom: -16px;
+        margin-left: -16px;
+    }
+
+
+    .checkout_info .payment_methods label
+    {
+        width: calc(33.333% - 16px);
+        margin-bottom: 16px;
+        margin-left: 16px;
+    }
+
+
+    .checkout_info .payment_methods label .check + div
+    {
+        min-height: 120px;
+        padding: 24px 24px 24px 60px;
+    }
+
+
+    .checkout_info .payment_methods label .check
+    {
+        top: 23px;
+        left: 23px;
+
+        width: 22px;
+        height: 22px;
+    }
+
+
+
+    /*--------------------
+        Checkout total
+    --------------------*/
+    .checkout_total
+    {
+        top: 0;
+
+        margin-top: 24px;
+        padding: 22px;
+    }
+
+
+    .checkout_total .checkout_btn
+    {
+        height: 48px;
+        margin-top: 24px;
+    }
+
+
+    .checkout_total .checkbox
+    {
+        min-height: 24px;
+        margin-top: 20px;
+        padding-left: 36px;
+    }
+
+
+    .checkout_total .checkbox .check
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .checkout_total .checkbox .check svg
+    {
+        width: 13px;
+        height: 10px;
+    }
+
+
+
+    /*-------------
+        LK info
+    -------------*/
+    .lk_info aside
+    {
+        order: 2;
+
+        margin-top: 40px;
+    }
+
+
+
+    .lk_info .form .columns
+    {
+        --form_columns_offset: 24px;
+    }
+
+
+    .lk_info .form .input
+    {
+        font-size: 16px;
+    }
+
+
+    .lk_info .form .label
+    {
+        font-size: 14px;
+    }
+
+
+    .lk_info .form .edit_btn,
+    .lk_info .form .submit_btn
+    {
+        width: auto;
     }
 
 

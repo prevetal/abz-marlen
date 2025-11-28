@@ -438,7 +438,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	if (fileInputs) {
 		fileInputs.forEach(el => {
-			el.addEventListener('change', () => el.closest('.file').querySelector('label span').innerText = el.value)
+			el.addEventListener('change', () => el.closest('.file').querySelector('label > span').innerText = el.value)
 		})
 	}
 
@@ -535,6 +535,108 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Залипание блока
 	$('.sticky').stick_in_parent()
+
+
+	// LK form/Checkout form
+	$('.lk_info .form .input, .lk_info .form textarea').keydown(function(e) {
+		let _self = $(this)
+
+		setTimeout(() => {
+			_self.val().length
+				? _self.addClass('active')
+				: _self.removeClass('active')
+		})
+	})
+
+	$('.lk_info .form .edit_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.lk_info .form .input').removeAttr('readonly')
+		$('.lk_info .form input[type="file"]').removeAttr('disabled')
+
+		$(this).hide()
+	})
+
+
+	// LK history
+	$('.lk_history .order .head').click(function(e) {
+		e.preventDefault()
+
+		$(this).closest('.order').toggleClass('open').find('.data').slideToggle(300)
+	})
+
+
+	// Checkout form
+	$('.checkout_info .form .input, .checkout_info .form textarea').keydown(function(e) {
+		let _self = $(this)
+
+		setTimeout(() => {
+			_self.val().length
+				? _self.addClass('active')
+				: _self.removeClass('active')
+		})
+	})
+
+
+	$('.checkout_info .legal_entity .checkbox').click(function(e) {
+		if (e.target.nodeName === 'LABEL') {
+			$('.checkout_info .legal_entity .data').slideToggle(300)
+		}
+	})
+
+
+	// Изменение количества товара
+	$('body').on('click', '.amount .minus', function (e) {
+		e.preventDefault()
+
+		const $parent = $(this).closest('.amount'),
+			$input = $parent.find('.input'),
+			inputVal = parseFloat($input.val()),
+			minimum = parseFloat($input.data('minimum')),
+			step = parseFloat($input.data('step')),
+			unit = $input.data('unit')
+
+		if (inputVal > minimum) $input.val(inputVal - step + unit)
+	})
+
+	$('body').on('click', '.amount .plus', function (e) {
+		e.preventDefault()
+
+		const $parent = $(this).closest('.amount'),
+			$input = $parent.find('.input'),
+			inputVal = parseFloat($input.val()),
+			maximum = parseFloat($input.data('maximum')),
+			step = parseFloat($input.data('step')),
+			unit = $input.data('unit')
+
+		if (inputVal < maximum) $input.val(inputVal + step + unit)
+	})
+
+	$('.amount .input').keydown(function () {
+		const _self = $(this),
+			maximum = parseInt(_self.data('maximum'))
+
+		setTimeout(() => {
+			if (_self.val() == '' || _self.val() == 0) _self.val(parseInt(_self.data('minimum')))
+			if (_self.val() > maximum) _self.val(maximum)
+		})
+	})
+
+
+	// Product to favorite
+	$('.product .favorite_btn, .product_info .favorite_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+	})
+
+
+	// Product to cart
+	$('.product .buy_btn, .product_info .buy_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+	})
 })
 
 
