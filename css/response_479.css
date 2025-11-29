@@ -452,6 +452,11 @@
     }
 
 
+    .product_info .buy .price
+    {
+        font-size: 24px;
+    }
+
 
     .product_info .description .title
     {

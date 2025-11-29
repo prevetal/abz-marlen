@@ -1329,6 +1329,13 @@
     }
 
 
+    .products .product .favorite_btn
+    {
+        top: 11px;
+        right: 11px;
+    }
+
+
     .products .product .thumb
     {
         height: 220px;
@@ -1350,21 +1357,15 @@
     }
 
 
-    .products .product .link
+    .products .product .price
     {
-        margin-top: 16px;
+        font-size: 18px;
     }
 
-    .products .product .link a
-    {
-        width: 100%;
 
-        text-align: center;
-    }
-
-    .products .product .link a span
+    .products .product .buy_btn
     {
-        padding: 8px 20px;
+        margin-top: 8px;
     }
 
 
@@ -1482,18 +1483,27 @@
     .product_info .buy
     {
         margin-top: 40px;
-        margin-left: -40px;
-    }
 
-    .product_info .buy > *
-    {
-        margin-left: 40px;
+        gap: 8px 24px;
     }
 
 
     .product_info .buy .price
     {
+        font-size: 28px;
+    }
+
+
+    .product_info .buy .price.request
+    {
         font-size: 20px;
+    }
+
+
+    .product_info .buy .buy_btn
+    {
+        height: 48px;
+        padding-inline: 23px;
     }
 
 

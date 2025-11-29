@@ -927,6 +927,12 @@
     {
         width: 100%;
 
+        font-size: 26px;
+    }
+
+
+    .product_info .buy .price.request
+    {
         font-size: 18px;
     }
 

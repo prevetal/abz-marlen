@@ -548,6 +548,15 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 	})
 
+	$('.lk_info .form .edit_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.lk_info .form .input').removeAttr('readonly')
+		$('.lk_info .form input[type="file"]').removeAttr('disabled')
+
+		$(this).hide()
+	})
+
 
 	// LK history
 	$('.lk_history .order .head').click(function(e) {
@@ -611,6 +620,22 @@ document.addEventListener('DOMContentLoaded', function () {
 			if (_self.val() == '' || _self.val() == 0) _self.val(parseInt(_self.data('minimum')))
 			if (_self.val() > maximum) _self.val(maximum)
 		})
+	})
+
+
+	// Product to favorite
+	$('.product .favorite_btn, .product_info .favorite_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+	})
+
+
+	// Product to cart
+	$('.product .buy_btn, .product_info .buy_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
 	})
 })
 
