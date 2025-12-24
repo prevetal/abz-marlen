@@ -652,4 +652,14 @@
     {
         margin-top: 0;
     }
+
+
+
+    .modal .form .btns
+    {
+        display: flex;
+        flex-direction: column;
+
+        gap: 4px;
+    }
 }
