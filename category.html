@@ -73,13 +73,13 @@
 
 							<div class="links">
 								<div class="account">
-									<a href="/">
+									<button class="btn modal_btn" data-modal="login_modal">
 										<div class="icon">
 											<svg><use xlink:href="images/sprite.svg#ic_user"></use></svg>
 										</div>
 
 										<div>Войти</div>
-									</a>
+									</button>
 								</div>
 
 								<div class="favorite">
@@ -1357,6 +1357,107 @@
 					<button type="submit" class="submit_btn">
 						<span>ОТПРАВИТЬ</span>
 					</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="login_modal">
+			<div class="modal_title">Авторизация</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Логин">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Пароль">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">
+						<span>Отправить</span>
+					</button>
+				</div>
+
+				<div class="btns">
+					<button type="button" class="btn modal_btn" data-modal="recovery_modal">Восстановить пароль</button>
+
+					<span>или</span>
+
+					<button type="button" class="btn modal_btn" data-modal="register_modal">Зарегистрироваться</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="recovery_modal">
+			<div class="modal_title">Восстановление пароля</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Email">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">
+						<span>Восстановить</span>
+					</button>
+				</div>
+
+				<div class="btns">
+					<button type="button" class="btn modal_btn" data-modal="login_modal">Авторизоваться</button>
+
+					<span>или</span>
+
+					<button type="button" class="btn modal_btn" data-modal="register_modal">Зарегистрироваться</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="register_modal">
+			<div class="modal_title">Регистрация</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Email">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="Телефон">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Пароль">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Пароль еще раз">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">
+						<span>Отправить</span>
+					</button>
+				</div>
+
+				<div class="btns">
+					<button type="button" class="btn modal_btn" data-modal="login_modal">Авторизоваться</button>
 				</div>
 			</form>
 		</section>
