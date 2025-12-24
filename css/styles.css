@@ -1025,7 +1025,8 @@ header .links
 }
 
 
-header .links a
+header .links a,
+header .links .btn
 {
     display: flex;
     flex-direction: column;
@@ -1110,7 +1111,11 @@ header .links .cart .count
 header .links a:hover,
 header .links a:hover .icon,
 header .links a.active,
-header .links a.active .icon
+header .links a.active .icon,
+header .links .btn:hover,
+header .links .btn:hover .icon,
+header .links .btn.active,
+header .links .btn.active .icon
 {
     color: #e31e24;
 }
@@ -8971,4 +8976,28 @@ footer .bottom a
 .modal .form .submit
 {
     justify-content: flex-end;
+}
+
+
+.modal .form .btns
+{
+    margin-top: 20px;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+
+.modal .form .btns .btn
+{
+    color: #e31e24;
+}
+
+
+#recovery_modal .form .submit_btn,
+#login_modal .form .submit_btn,
+#register_modal .form .submit_btn
+{
+    width: 100%;
 }
