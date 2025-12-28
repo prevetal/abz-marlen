@@ -8995,6 +8995,61 @@ footer .bottom a
 }
 
 
+
+#recovery_modal .form .label,
+#login_modal .form .label,
+#register_modal .form .label
+{
+    position: absolute;
+    top: 16px;
+    left: 18px;
+
+    width: fit-content;
+    padding-inline: 6px 19px;
+
+    font-size: 15px;
+    line-height: 130.122%;
+
+    z-index: 3;
+    transition: .2s linear;
+    letter-spacing: .3px;
+    pointer-events: none;
+
+    color: #4f4f4f;
+    background: var(--bg);
+}
+
+
+#recovery_modal .form .label span,
+#login_modal .form .label span,
+#register_modal .form .label span
+{
+    color: #e31e24;
+}
+
+
+#recovery_modal .form .input:focus + .label,
+#recovery_modal .form .input.active + .label,
+#login_modal .form .input:focus + .label,
+#login_modal .form .input.active + .label,
+#register_modal .form .input:focus + .label,
+#register_modal .form .input.active + .label
+{
+    top: -11px;
+}
+
+
+#recovery_modal .form .input,
+#login_modal .form .input,
+#register_modal .form .input
+{
+    font-size: 17px;
+    font-weight: 500;
+
+    letter-spacing: .34px;
+}
+
+
 #recovery_modal .form .submit_btn,
 #login_modal .form .submit_btn,
 #register_modal .form .submit_btn

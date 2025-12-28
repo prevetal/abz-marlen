@@ -538,7 +538,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// LK form/Checkout form
-	$('.lk_info .form .input, .lk_info .form textarea').keydown(function(e) {
+	$('.lk_info .form .input, .lk_info .form textarea, .modal .form .input').keydown(function(e) {
 		let _self = $(this)
 
 		setTimeout(() => {
