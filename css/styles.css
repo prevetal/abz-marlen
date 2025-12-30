@@ -2527,6 +2527,24 @@ aside .filter .reset_btn:hover
 }
 
 
+.form .error_text
+{
+    display: none;
+
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    color: var(--form_error_color);
+}
+
+
+.form .error ~ .error_text
+{
+    display: block;
+}
+
+
 .form .file label input
 {
     display: none;

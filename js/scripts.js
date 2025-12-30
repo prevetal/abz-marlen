@@ -637,6 +637,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		$(this).toggleClass('active')
 	})
+
+
+	// Custom submit
+	$('body').on('submit', '#login_modal form, #register_modal form, #recovery_modal form', function (e) {
+		e.preventDefault()
+
+		let form = $(this),
+    		isValid = true
+
+		form.find('[required]').each(function() {
+			let field = $(this),
+				value = field.val()?.trim()
+
+			if (field.attr('type') === 'checkbox') {
+				if (!field.is(':checked')) {
+					field.closest('label').addClass('error')
+					isValid = false
+				} else {
+					field.closest('label').removeClass('error')
+				}
+			} else {
+				if (!value) {
+					field.addClass('error')
+					isValid = false
+				} else {
+					field.removeClass('error')
+				}
+			}
+		})
+
+		if (!isValid) return
+	})
+
+
+	$(document).on('input change', '#login_modal form [required], #register_modal form [required], #recovery_modal form [required]', function() {
+    	let field = $(this)
+
+		field.attr('type') === 'checkbox'
+			? field.closest('label').removeClass('error')
+			: field.removeClass('error')
+	})
 })
 
 
